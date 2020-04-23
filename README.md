@@ -8,9 +8,13 @@ A collection of knowledge I learn throughout the day.  Do not want to write a fu
 
 ### Topics
 
+* [Asciidoc](#asciidoc)
 * [HAProxy](#haproxy)
 
 ---
+
+### Asciidoc
+- [Color Text](asciidoc/color-text.md)
 
 ### haproxy
 - [Defer Server DNS Lookups](haproxy/defer-server-dns-lookups.md)
