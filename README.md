@@ -18,3 +18,4 @@ A collection of knowledge I learn throughout the day.  Do not want to write a fu
 
 ### haproxy
 - [Defer Server DNS Lookups](haproxy/defer-server-dns-lookups.md)
+- [HAProxy and LUA](haproxy/haproxy-and-lua.md)
