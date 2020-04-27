@@ -6,6 +6,12 @@
     - shell: ./find_markdown.py
       register: markdowns_raw
 
+    - shell: |
+        "git log -1 --pretty=format:'%an' | grep CircleCI"
+      register: circleci_commit
+      ignore_errors: yes
+
+
     - set_fact: markdowns="{{ markdowns_raw.stdout | from_json }}"
 
     - debug:
@@ -15,6 +21,7 @@
         src: "README.md.j2"
         dest: "README.md"
       notify: commit and push
+      when: circleci_commit.rc == 1
 
   handlers:
     - name: commit and push
