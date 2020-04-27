@@ -12,7 +12,13 @@ jobs:
                 command: sudo apt-get install -y ansible
             - run:
                 name: Generate README
-                command: ansible-playbook playbook.yml
+                command: |
+                  last_commit_author="$(git log -1 --pretty=format:'%an' | grep CircleCI)"
+
+                  if [[ ${last_commit_author} == *CircleCI* ]]
+                  then
+                    ansible-playbook playbook.yml
+                  fi
 workflows:
     version: 2
     commit-workflow:
