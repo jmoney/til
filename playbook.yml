@@ -1,0 +1,16 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+    
+  tasks:
+    - shell: ./find_markdown.py
+      register: markdowns_raw
+
+    - set_fact: markdowns="{{ markdowns_raw.stdout | from_json }}"
+
+    - debug:
+        msg: "{{ markdowns }}"
+    
+    - template:
+        src: "README.md.j2"
+        dest: "README.md"
