@@ -14,7 +14,7 @@
     - template:
         src: "README.md.j2"
         dest: "README.md"
-        notify: commit and push
+      notify: commit and push
 
   handlers:
     - name: commit and push
