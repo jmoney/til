@@ -6,8 +6,7 @@
     - shell: ./find_markdown.py
       register: markdowns_raw
 
-    - shell: |
-        "git log -1 --pretty=format:'%an' | grep CircleCI"
+    - shell: "git log -1 --pretty=format:'%an' | grep CircleCI"
       register: circleci_commit
       ignore_errors: yes
 
