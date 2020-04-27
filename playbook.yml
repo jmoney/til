@@ -18,4 +18,9 @@
 
   handlers:
     - name: commit and push
-      shell: git add README.md && git commit --author "CircleCI <noreply@circleci.com>" -m "Added newly generated README" && git push origin master
+      shell: |
+        git config user.name "CircleCI"
+        git config user.email "noreply@circleci.com"
+        git add README.md
+        git commit -m "Added newly generated README"
+        git push origin master
