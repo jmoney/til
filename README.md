@@ -9,18 +9,18 @@ A collection of knowledge I learn throughout the day.  Do not want to write a fu
 ### Topics
 
 * [Haproxy](#haproxy)
-* [Devto](#devto)
 * [Asciidoc](#asciidoc)
+* [Devto](#devto)
 
 ---
 
 ### Haproxy
-* [Defer Server Dns Lookups](./markdown/haproxy/defer-server-dns-lookups.md)
 * [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
-
-### Devto
-* [Devto Api](./markdown/devto/devto-api.md)
+* [Defer Server Dns Lookups](./markdown/haproxy/defer-server-dns-lookups.md)
 
 ### Asciidoc
 * [Color Text](./markdown/asciidoc/color-text.md)
+
+### Devto
+* [Devto Api](./markdown/devto/devto-api.md)
 
