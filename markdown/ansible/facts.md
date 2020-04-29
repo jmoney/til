@@ -23,3 +23,6 @@ ansible <hostname> -m setup -a "filter=ansible_local"
         }
  }
 ```
+
+## Reference
+[Ansible Facts.d](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#local-facts-facts-d)
