@@ -8,31 +8,31 @@ A collection of knowledge I learn throughout the day.  Do not want to write a fu
 
 ### Topics
 
-* [Ansible](#ansible)
-* [Asciidoc](#asciidoc)
 * [Aws](#aws)
-* [Devto](#devto)
+* [Ansible](#ansible)
 * [Haproxy](#haproxy)
+* [Asciidoc](#asciidoc)
+* [Devto](#devto)
 
 ---
+
+### Aws
+* [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
+* [Privatelink_Alignment](./markdown/aws/privatelink_alignment.md)
 
 ### Ansible
 * [Handlers](./markdown/ansible/handlers.md)
 * [Facts](./markdown/ansible/facts.md)
 
+### Haproxy
+* [Defer Server Dns Lookups](./markdown/haproxy/defer-server-dns-lookups.md)
+* [Failover](./markdown/haproxy/failover.md)
+* [Service Discovery](./markdown/haproxy/service-discovery.md)
+* [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
+
 ### Asciidoc
 * [Color Text](./markdown/asciidoc/color-text.md)
 
-### Aws
-* [Privatelink_Alignment](./markdown/aws/privatelink_alignment.md)
-* [Unused_Ebs_Volumes](./markdown/aws/unused_ebs_volumes.md)
-
 ### Devto
 * [Devto Api](./markdown/devto/devto-api.md)
-
-### Haproxy
-* [Service Discovery](./markdown/haproxy/service-discovery.md)
-* [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
-* [Failover](./markdown/haproxy/failover.md)
-* [Defer Server Dns Lookups](./markdown/haproxy/defer-server-dns-lookups.md)
 
