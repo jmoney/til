@@ -8,32 +8,36 @@ A collection of knowledge I learn throughout the day.  Do not want to write a fu
 
 ### Topics
 
-* [Ansible](#ansible)
 * [Haproxy](#haproxy)
-* [Aws](#aws)
 * [Devto](#devto)
+* [Golang](#golang)
+* [Ansible](#ansible)
 * [Asciidoc](#asciidoc)
+* [Aws](#aws)
 
 ---
 
-### Ansible
-* [Handlers](./markdown/ansible/handlers.md)
-* [Facts](./markdown/ansible/facts.md)
-
 ### Haproxy
-* [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
-* [Failover](./markdown/haproxy/failover.md)
-* [Defer Server Dns Lookups](./markdown/haproxy/defer-server-dns-lookups.md)
 * [Service Discovery](./markdown/haproxy/service-discovery.md)
-
-### Aws
-* [Ec2 Instancetype Latest Generation](./markdown/aws/ec2-instancetype-latest-generation.md)
-* [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
-* [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
+* [Defer Server Dns Lookups](./markdown/haproxy/defer-server-dns-lookups.md)
+* [Failover](./markdown/haproxy/failover.md)
+* [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
 
 ### Devto
 * [Devto Api](./markdown/devto/devto-api.md)
 
+### Golang
+* [Goreleaser](./markdown/golang/goreleaser.md)
+
+### Ansible
+* [Facts](./markdown/ansible/facts.md)
+* [Handlers](./markdown/ansible/handlers.md)
+
 ### Asciidoc
 * [Color Text](./markdown/asciidoc/color-text.md)
+
+### Aws
+* [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
+* [Ec2 Instancetype Latest Generation](./markdown/aws/ec2-instancetype-latest-generation.md)
+* [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
 
