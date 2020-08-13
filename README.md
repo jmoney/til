@@ -29,6 +29,7 @@
 
 * [Ec2 Instancetype Latest Generation](./markdown/aws/ec2-instancetype-latest-generation.md)
 * [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
+* [Rds Replication Management](./markdown/aws/rds-replication-management.md)
 * [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
 
 ### Devto
