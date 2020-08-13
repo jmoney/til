@@ -1,13 +1,11 @@
 # TIL
 {% macro sentence_case(text) %}{{ text[0]|upper}}{{text[1:] }}{% endmacro %}
 
-> Today I Learned
-
-A collection of knowledge I learn throughout the day.  Do not want to write a full blown blog on the topics but do want to record them for other folks who stumble upon them or myself, I have a terrible memory.
+> A collection of knowledge I learn throughout the day.  Do not want to write a full blown blog on the topics but do want to record them for other folks who stumble upon them or myself, I have a terrible memory.
 
 ---
 
-### Topics
+## Topics
 
 {% for markdown in markdowns %}
 * [{{ sentence_case(markdown) }}](#{{ markdown }})
@@ -17,8 +15,9 @@ A collection of knowledge I learn throughout the day.  Do not want to write a fu
 
 {% for markdown in markdowns %}
 ### {{ sentence_case(markdown) }}
+
 {% for markdown_file in markdowns[markdown] %}
-* [{{ markdown_file["title_filename"] }}]({{ markdown_file["fullpath"] }})
+* [{{ markdown_file }}]({{ markdowns[markdown][markdown_file]["fullpath"] }})
 {% endfor %}
 
 {% endfor %}

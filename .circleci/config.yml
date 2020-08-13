@@ -7,6 +7,9 @@ jobs:
         working_directory: ~/til
         steps:
             - checkout
+            - run:
+                name: list directory contents
+                command: ls
             - run: 
                 name: Download ansible
                 command: sudo apt-get install -y ansible

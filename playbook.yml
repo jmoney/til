@@ -3,13 +3,12 @@
   connection: local
     
   tasks:
-    - shell: ./find_markdown.py
+    - shell: ./.template/find_markdown.py
       register: markdowns_raw
 
     - shell: "git log -1 --pretty=format:'%an' | grep CircleCI"
       register: circleci_commit
       ignore_errors: yes
-
 
     - set_fact: markdowns="{{ markdowns_raw.stdout | from_json }}"
 
@@ -17,16 +16,17 @@
         msg: "{{ markdowns }}"
     
     - template:
-        src: "README.md.j2"
+        src: "./.template/README.md.j2"
         dest: "README.md"
-      notify: commit and push
+      notify: generated
       when: circleci_commit.rc == 1
 
   handlers:
     - name: commit and push
       shell: |
-        git config user.name "CircleCI"
-        git config user.email "noreply@circleci.com"
+        git config user.name > /dev/null || git config user.name "CircleCI"
+        git config user.email > /dev/null || git config user.email "noreply@circleci.com"
         git add README.md
-        git commit -m "Added newly generated README"
+        git commit --message "Added newly generated README" --author "CircleCI <noreply@circleci.com>"
         git push origin master
+      listen: "generated"
