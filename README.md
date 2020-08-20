@@ -54,5 +54,6 @@
 
 ### Postgres
 
+* [What Privileges Are Assigned To A User](./markdown/postgres/what-privileges-are-assigned-to-a-user.md)
 * [What User Owns Tables In A Schema](./markdown/postgres/what-user-owns-tables-in-a-schema.md)
 
