@@ -28,6 +28,7 @@
 
 ### Aws
 
+* [Dynamic References Cfn](./markdown/aws/dynamic-references-cfn.md)
 * [Ec2 Instancetype Latest Generation](./markdown/aws/ec2-instancetype-latest-generation.md)
 * [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
 * [Rds Replication Management](./markdown/aws/rds-replication-management.md)
