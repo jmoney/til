@@ -30,6 +30,7 @@
 
 * [Dynamic References Cfn](./markdown/aws/dynamic-references-cfn.md)
 * [Ec2 Instancetype Latest Generation](./markdown/aws/ec2-instancetype-latest-generation.md)
+* [Lambda Docker Container](./markdown/aws/lambda-docker-container.md)
 * [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
 * [Rds Replication Management](./markdown/aws/rds-replication-management.md)
 * [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
