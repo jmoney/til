@@ -24,13 +24,7 @@ jobs:
                 command: pip install mkdocs-material
             - run: 
                 name: Build docs
-                command: | 
-                    mkdocs build --site-dir docs
-                    git config user.name > /dev/null || git config user.name "CircleCI"
-                    git config user.email > /dev/null || git config user.email "noreply@circleci.com"
-                    git add docs
-                    git commit --message "Generated docs" --author "CircleCI <noreply@circleci.com>"
-                    git push origin master
+                command: mkdocs gh-deploy
             - run:
                 name: Generate README
                 command: ansible-playbook playbook.yml
