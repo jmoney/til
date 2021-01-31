@@ -11,6 +11,9 @@ jobs:
                 name: list directory contents
                 command: ls
             - run: 
+                name: Update apt-get
+                command: sudo apt-get update -y 
+            - run: 
                 name: Download ansible
                 command: sudo apt-get install -y ansible
             - run: 
