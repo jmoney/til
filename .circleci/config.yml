@@ -24,7 +24,7 @@ jobs:
                 command: pip install mkdocs-material
             - run: 
                 name: Build docs
-                command: mkdocs build
+                command: mkdocs build --site-dir docs
             - run:
                 name: Generate README
                 command: ansible-playbook playbook.yml

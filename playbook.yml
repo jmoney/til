@@ -26,7 +26,7 @@
       shell: |
         git config user.name > /dev/null || git config user.name "CircleCI"
         git config user.email > /dev/null || git config user.email "noreply@circleci.com"
-        git add README.md
-        git commit --message "Added newly generated README" --author "CircleCI <noreply@circleci.com>"
+        git add README.md docs
+        git commit --message "Generated docs" --author "CircleCI <noreply@circleci.com>"
         git push origin master
       listen: "generated"
