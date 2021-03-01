@@ -14,7 +14,7 @@
     
     
       
-        <title>HAProxy and Lua - TIL</title>
+        <title>Active WAL Readers on Slot - TIL</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#haproxy-and-lua" class="md-skip">
+        <a href="#active-wal-readers-on-slot" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HAProxy and Lua
+              Active WAL Readers on Slot
             
           </span>
         </div>
@@ -546,14 +546,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       <label class="md-nav__link" for="__nav_8">
         Haproxy
@@ -571,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../defer-server-dns-lookups/" class="md-nav__link">
+      <a href="../../haproxy/defer-server-dns-lookups/" class="md-nav__link">
         Defer Server DNS lookups
       </a>
     </li>
@@ -583,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../failover/" class="md-nav__link">
+      <a href="../../haproxy/failover/" class="md-nav__link">
         Failover
       </a>
     </li>
@@ -593,20 +591,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../haproxy/haproxy-and-lua/" class="md-nav__link">
         HAProxy and Lua
       </a>
-      
     </li>
   
 
@@ -616,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../service-discovery/" class="md-nav__link">
+      <a href="../../haproxy/service-discovery/" class="md-nav__link">
         Service Discovery
       </a>
     </li>
@@ -635,12 +624,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       <label class="md-nav__link" for="__nav_9">
         Postgres
@@ -656,11 +647,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../postgres/active-wal-readers-on-slot/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Active WAL Readers on Slot
       </a>
+      
     </li>
   
 
@@ -670,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/destructively-clear-out-replication-slot/" class="md-nav__link">
+      <a href="../destructively-clear-out-replication-slot/" class="md-nav__link">
         Destructively Clear Out Replication Slot
       </a>
     </li>
@@ -682,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/disk-space-queries/" class="md-nav__link">
+      <a href="../disk-space-queries/" class="md-nav__link">
         Disk Space Queries
       </a>
     </li>
@@ -694,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/what-privileges-are-assigned-to-a-user/" class="md-nav__link">
+      <a href="../what-privileges-are-assigned-to-a-user/" class="md-nav__link">
         What privileges are assigned to a user
       </a>
     </li>
@@ -706,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/what-user-owns-tables-in-a-schema/" class="md-nav__link">
+      <a href="../what-user-owns-tables-in-a-schema/" class="md-nav__link">
         What user owns tables in a schema
       </a>
     </li>
@@ -748,8 +748,20 @@
               
                 
                 
-                <h1 id="haproxy-and-lua">HAProxy and Lua</h1>
-<p>HAProxy can be extended to do a lot more than just simple load balancing using the lua scripting language.  I could go talk about just a few items but it would not do it justice.  <a href="https://www.haproxy.com/blog/5-ways-to-extend-haproxy-with-lua/">This</a> shows 5 different concepts in how you can extend HAProxy to do more with the simple lua scripting language.</p>
+                <h1 id="active-wal-readers-on-slot">Active WAL Readers on Slot</h1>
+<pre><code class="language-sql">SELECT psa.usename,
+       psa.application_name,
+       psa.client_addr,
+       psa.datname,
+       prs.slot_name,
+       psa.state,
+       psa.wait_event,
+       prs.restart_lsn,
+       prs.confirmed_flush_lsn
+FROM pg_replication_slots prs
+JOIN pg_stat_activity psa ON prs.active_pid = psa.pid
+WHERE prs.slot_name = 'kinesis';
+</code></pre>
                 
               
               
@@ -767,7 +779,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../failover/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../haproxy/service-discovery/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -776,19 +788,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Failover
+              Service Discovery
             </div>
           </div>
         </a>
       
       
-        <a href="../service-discovery/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../destructively-clear-out-replication-slot/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Service Discovery
+              Destructively Clear Out Replication Slot
             </div>
           </div>
           <div class="md-footer__button md-icon">
