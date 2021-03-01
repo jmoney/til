@@ -4,10 +4,10 @@
 
 ```sql
 SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ensure slot eists
-SELECT pg_drop_replication_slot('slot_name'); -- Drop slot
-SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name';  -- ensure slot does not exists
--- Wait for some specified amount of time for WAL files to clear
-SELECT pg_create_logical_replication_slot('slot_name', 'wal2json'); -- create new logical slot and hookup wal2json plugin
+SELECT pg_drop_replication_slot('slot_name');                             -- Drop slot
+SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ensure slot does not exists
+SELECT pg_sleep(300);                                                     -- Wait for some specified amount of time for WAL files to clear
+SELECT pg_create_logical_replication_slot('slot_name', 'wal2json');       -- create new logical slot and hookup wal2json plugin
 SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ensure slot eists
 ```
 
