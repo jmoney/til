@@ -35,6 +35,7 @@
 * [Lambda Docker Container](./markdown/aws/lambda-docker-container.md)
 * [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
 * [Rds Replication Management](./markdown/aws/rds-replication-management.md)
+* [Send Command Ssm](./markdown/aws/send-command-ssm.md)
 * [Transit Gateway Cross Acount Sharing](./markdown/aws/transit-gateway-cross-acount-sharing.md)
 * [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
 
