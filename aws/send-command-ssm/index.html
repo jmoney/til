@@ -784,7 +784,7 @@
 <h2 id="run-command-over-instnces-via-multiple-tags">Run command over instnces via multiple tags</h2>
 <pre><code class="language-bash">aws ssm send-command --document-name &quot;AWS-RunShellScript&quot; --parameters 'commands=[&quot;echo hello,world&quot;]' --targets Key=tag:tagA,Values=foo Key=tag:tagB,Values=Bar Key=tag:tabC,Values=Baz
 </code></pre>
-<p>Notice the space between the "Values" and the "Key".</p>
+<p>Notice the space between the "Values" and the "Key" in the <code>--targets</code> option.</p>
                 
               
               
