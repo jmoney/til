@@ -14,7 +14,7 @@
     
     
       
-        <title>Destructively Clear Out Replication Slot - TIL</title>
+        <title>WAL Sender Timeout - TIL</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#destructively-clear-out-replication-slot" class="md-skip">
+        <a href="#wal-sender-timeout" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Destructively Clear Out Replication Slot
+              WAL Sender Timeout
             
           </span>
         </div>
@@ -671,20 +671,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../destructively-clear-out-replication-slot/" class="md-nav__link">
         Destructively Clear Out Replication Slot
       </a>
-      
     </li>
   
 
@@ -704,11 +695,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../wal-senders-timeout/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         WAL Sender Timeout
       </a>
+      
     </li>
   
 
@@ -772,18 +772,17 @@
               
                 
                 
-                <h1 id="destructively-clear-out-replication-slot">Destructively Clear Out Replication Slot</h1>
+                <h1 id="wal-sender-timeout">WAL Sender Timeout</h1>
 <blockquote>
-<p>This is not to  be done in a production environment.</p>
+<p>wal_sender_timeout (integer)
+Terminate replication connections that are inactive longer than the specified number of milliseconds. This is useful for the sending server to detect a standby crash or network outage. A value of zero disables the timeout mechanism. This parameter can only be set in the postgresql.conf file or on the server command line. The default value is 60 seconds.</p>
 </blockquote>
-<pre><code class="language-sql">SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ensure slot eists
-SELECT pg_drop_replication_slot('slot_name');                             -- Drop slot
-SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ensure slot does not exists
-SELECT pg_sleep(300);                                                     -- Wait for some specified amount of time for WAL files to clear
-SELECT pg_create_logical_replication_slot('slot_name', 'wal2json');       -- create new logical slot and hookup wal2json plugin
-SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ensure slot eists
+<p>The following will show what the current value is for the <code>wal_sender_timeout</code>.</p>
+<pre><code class="language-sql">SHOW wal_sender_timeout;
 </code></pre>
-<p>The above is useful for clearing out WAL files in RDS if the WAL reader fell behind and we just want to get the wal reader to the end of the WAL.  Usually waiting 5 to 10 minutes is good enough to clear out all the obsolete WAL files.  Running the query in <a href="../disk-space-queries/">Disk Space Queries</a> should be a good gauge if the WAL files are deleted.</p>
+<p>The following will update the current value for <code>wal_sender_timeout</code> to 0 which disables the timeout.</p>
+<pre><code class="language-sql">ALTER SYSTEM SET wal_sender_timeout TO 0;
+</code></pre>
                 
               
               
@@ -801,7 +800,7 @@ SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ens
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../active-wal-readers-on-slot/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../disk-space-queries/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -810,19 +809,19 @@ SELECT slot_name FROM pg_replication_slots WHERE slot_name = 'slot_name'; -- ens
               <span class="md-footer__direction">
                 Previous
               </span>
-              Active WAL Readers on Slot
+              Disk Space Queries
             </div>
           </div>
         </a>
       
       
-        <a href="../disk-space-queries/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../what-privileges-are-assigned-to-a-user/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Disk Space Queries
+              What privileges are assigned to a user
             </div>
           </div>
           <div class="md-footer__button md-icon">
