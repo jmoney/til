@@ -13,6 +13,7 @@
 * [Docker](#docker)
 * [Golang](#golang)
 * [Haproxy](#haproxy)
+* [Javascript](#javascript)
 * [Markdown](#markdown)
 * [Postgres](#postgres)
 
@@ -59,6 +60,10 @@
 * [Failover](./markdown/haproxy/failover.md)
 * [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
 * [Service Discovery](./markdown/haproxy/service-discovery.md)
+
+### Javascript
+
+* [Regex](./markdown/javascript/regex.md)
 
 ### Markdown
 
