@@ -15,6 +15,7 @@
 * [Haproxy](#haproxy)
 * [Javascript](#javascript)
 * [Markdown](#markdown)
+* [Openssl](#openssl)
 * [Postgres](#postgres)
 
 ---
@@ -68,6 +69,10 @@
 ### Markdown
 
 * [Index](./markdown/index.md)
+
+### Openssl
+
+* [Base64](./markdown/openssl/base64.md)
 
 ### Postgres
 
