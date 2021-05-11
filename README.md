@@ -39,6 +39,7 @@
 * [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
 * [Rds Replication Management](./markdown/aws/rds-replication-management.md)
 * [Rds Update Configurations](./markdown/aws/rds-update-configurations.md)
+* [Secrets Manager Decryt](./markdown/aws/secrets-manager-decryt.md)
 * [Send Command Ssm](./markdown/aws/send-command-ssm.md)
 * [Transit Gateway Cross Acount Sharing](./markdown/aws/transit-gateway-cross-acount-sharing.md)
 * [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
