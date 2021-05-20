@@ -13,6 +13,7 @@
 * [Docker](#docker)
 * [Golang](#golang)
 * [Haproxy](#haproxy)
+* [Intellij](#intellij)
 * [Javascript](#javascript)
 * [Markdown](#markdown)
 * [Openssl](#openssl)
@@ -62,6 +63,10 @@
 * [Failover](./markdown/haproxy/failover.md)
 * [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
 * [Service Discovery](./markdown/haproxy/service-discovery.md)
+
+### Intellij
+
+* [Cannot Connect Localhost](./markdown/intellij/cannot-connect-localhost.md)
 
 ### Javascript
 
