@@ -14,7 +14,7 @@
     
     
       
-        <title>Facts - TIL</title>
+        <title>Cannot Connect to Localhost - TIL</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#facts" class="md-skip">
+        <a href="#cannot-connect-to-localhost" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Facts
+              Cannot Connect to Localhost
             
           </span>
         </div>
@@ -182,14 +182,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       <label class="md-nav__link" for="__nav_2">
         Ansible
@@ -205,51 +203,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Facts
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ansible/facts/" class="md-nav__link">
         Facts
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    Reference
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -259,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../handlers/" class="md-nav__link">
+      <a href="../../ansible/handlers/" class="md-nav__link">
         Handlers
       </a>
     </li>
@@ -698,12 +656,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       <label class="md-nav__link" for="__nav_9">
         Intellij
@@ -719,11 +679,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../intellij/cannot-connect-localhost/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Cannot Connect to Localhost
       </a>
+      
     </li>
   
 
@@ -939,21 +909,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    Reference
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -965,26 +920,33 @@
               
                 
                 
-                <h1 id="facts">Facts</h1>
-<p>Facts are a bit of data on the server that configuration frameworks like puppet and ansible can read and take advantage of.  The facts for ansible go in <code>/etc/ansible/facts.d</code> and can be a file that contains JSON or INI format or an executable script that returns JSON.  The extension is <code>.fact</code>. These facts are then available via <code>ansible &lt;hostname&gt; -m setup</code></p>
-<p><code>/etc/ansible/facts.d/preferences.fact</code></p>
-<pre><code class="language-ini">[general]
-asdf=1
-bar=2
+                <h1 id="cannot-connect-to-localhost">Cannot Connect to Localhost</h1>
+<p>This one is more of a bug TIL that has been annoying me lately.</p>
+<p>Somewhat recently IntelliJ started to fail connecting to localhost when syncing an maven based project.</p>
+<pre><code class="language-plaintext">Caused by: java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+ java.net.ConnectException: Connection refused (Connection refused)
+ at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:619)
+ at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+ at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
 </code></pre>
-<pre><code class="language-bash">ansible &lt;hostname&gt; -m setup -a &quot;filter=ansible_local&quot;
+<p>During troubleshooting, the caches were invalidated/restarted and the <code>.idea</code> directory was wiped and re-built but to no avail.</p>
+<p>Found an <a href="https://intellij-support.jetbrains.com/hc/en-us/articles/360014262940-Unable-to-import-Maven-project-import-fails-with-error-Cannot-reconnect">article</a> that was the exact problem.</p>
+<p>Turns out, docker-for-desktop was adding a localhost line to the <code>/etc/hosts</code> file and for whatever reason DNS in intellij did not like that.</p>
+<pre><code class="language-plaintext">##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1   localhost
+255.255.255.255 broadcasthost
+::1             localhost
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
 </code></pre>
-<pre><code class="language-json">&quot;ansible_local&quot;: {
-        &quot;preferences&quot;: {
-            &quot;general&quot;: {
-                &quot;asdf&quot; : &quot;1&quot;,
-                &quot;bar&quot;  : &quot;2&quot;
-            }
-        }
- }
-</code></pre>
-<h2 id="reference">Reference</h2>
-<p><a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#local-facts-facts-d">Ansible Facts.d</a></p>
+<p>Removing the lines for docker-for-desktop fixed the issue.</p>
                 
               
               
@@ -1003,7 +965,7 @@ bar=2
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../.." class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../haproxy/service-discovery/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1012,19 +974,19 @@ bar=2
               <span class="md-footer__direction">
                 Previous
               </span>
-              TIL
+              Service Discovery
             </div>
           </div>
         </a>
       
       
-        <a href="../handlers/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../javascript/regex/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Handlers
+              Regex
             </div>
           </div>
           <div class="md-footer__button md-icon">
