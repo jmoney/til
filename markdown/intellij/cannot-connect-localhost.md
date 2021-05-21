@@ -25,8 +25,8 @@ Turns out, docker-for-desktop was adding a localhost line to the `/etc/hosts` fi
 # localhost is used to configure the loopback interface
 # when the system is booting.  Do not change this entry.
 ##
-127.0.0.1	localhost
-255.255.255.255	broadcasthost
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
 ::1             localhost
 # Added by Docker Desktop
 # To allow the same kube context to work on the host and the container:
@@ -35,4 +35,3 @@ Turns out, docker-for-desktop was adding a localhost line to the `/etc/hosts` fi
 ```
 
 Removing the lines for docker-for-desktop fixed the issue.
-
