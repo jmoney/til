@@ -11,7 +11,8 @@ LIMIT 1;
 
 Output is something like
 
-```text
+```plain
+
        pk        | row_size
 ------------------------+----------
         1        |   112766
