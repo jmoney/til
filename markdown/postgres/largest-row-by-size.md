@@ -12,8 +12,7 @@ LIMIT 1;
 Output is something like
 
 ```plain
-
-       pk        | row_size
-------------------------+----------
-        1        |   112766
+pk | row_size
+--------+----------
+1 | 112766
  ```
