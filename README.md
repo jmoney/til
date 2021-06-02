@@ -83,6 +83,7 @@
 ### Postgres
 
 * [Active Wal Readers On Slot](./markdown/postgres/active-wal-readers-on-slot.md)
+* [Advance Walreader](./markdown/postgres/advance-walreader.md)
 * [Destructively Clear Out Replication Slot](./markdown/postgres/destructively-clear-out-replication-slot.md)
 * [Disk Space Queries](./markdown/postgres/disk-space-queries.md)
 * [Largest Row By Size](./markdown/postgres/largest-row-by-size.md)
