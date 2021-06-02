@@ -87,6 +87,7 @@
 * [Disk Space Queries](./markdown/postgres/disk-space-queries.md)
 * [Largest Row By Size](./markdown/postgres/largest-row-by-size.md)
 * [Wal Senders Timeout](./markdown/postgres/wal-senders-timeout.md)
+* [Wal2Json Nextlsn](./markdown/postgres/wal2json-nextlsn.md)
 * [What Privileges Are Assigned To A User](./markdown/postgres/what-privileges-are-assigned-to-a-user.md)
 * [What User Owns Tables In A Schema](./markdown/postgres/what-user-owns-tables-in-a-schema.md)
 
