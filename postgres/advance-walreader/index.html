@@ -14,7 +14,7 @@
     
     
       
-        <title>Docker Compose Down - TIL</title>
+        <title>Advance a WAL Reader - TIL</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-compose-down" class="md-skip">
+        <a href="#advance-a-wal-reader" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Compose Down
+              Advance a WAL Reader
             
           </span>
         </div>
@@ -494,14 +494,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       <label class="md-nav__link" for="__nav_6">
         Docker
@@ -517,21 +515,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../docker/docker-compose-down/" class="md-nav__link">
         Docker Compose Down
       </a>
-      
     </li>
   
 
@@ -794,12 +782,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
       
       <label class="md-nav__link" for="__nav_12">
         Postgres
@@ -817,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/active-wal-readers-on-slot/" class="md-nav__link">
+      <a href="../active-wal-readers-on-slot/" class="md-nav__link">
         Active WAL Readers on Slot
       </a>
     </li>
@@ -827,11 +817,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../postgres/advance-walreader/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Advance a WAL Reader
       </a>
+      
     </li>
   
 
@@ -841,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/destructively-clear-out-replication-slot/" class="md-nav__link">
+      <a href="../destructively-clear-out-replication-slot/" class="md-nav__link">
         Destructively Clear Out Replication Slot
       </a>
     </li>
@@ -853,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/disk-space-queries/" class="md-nav__link">
+      <a href="../disk-space-queries/" class="md-nav__link">
         Disk Space Queries
       </a>
     </li>
@@ -865,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/largest-row-by-size/" class="md-nav__link">
+      <a href="../largest-row-by-size/" class="md-nav__link">
         Largest Row By Size
       </a>
     </li>
@@ -877,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/wal-senders-timeout/" class="md-nav__link">
+      <a href="../wal-senders-timeout/" class="md-nav__link">
         WAL Sender Timeout
       </a>
     </li>
@@ -889,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/wal2json-nextlsn/" class="md-nav__link">
+      <a href="../wal2json-nextlsn/" class="md-nav__link">
         Wal2Json Next LSN
       </a>
     </li>
@@ -901,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/what-privileges-are-assigned-to-a-user/" class="md-nav__link">
+      <a href="../what-privileges-are-assigned-to-a-user/" class="md-nav__link">
         What privileges are assigned to a user
       </a>
     </li>
@@ -913,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../postgres/what-user-owns-tables-in-a-schema/" class="md-nav__link">
+      <a href="../what-user-owns-tables-in-a-schema/" class="md-nav__link">
         What user owns tables in a schema
       </a>
     </li>
@@ -956,17 +956,9 @@
               
                 
                 
-                <h1 id="docker-compose-down">Docker Compose Down</h1>
-<p>Ever seen the error</p>
-<pre><code class="language-bash">docker-compose up
-Recreating example-search-platform_datastore_1 ... error
-
-ERROR: for example-search-platform_datastore_1  b'no such image: sha256:b3def9a4744708e197d783b59f234a359116ef737af6600b5273c94cecdd7000: No such image: sha256:b3def9a4744708e197d783b59f234a359116ef737af6600b5273c94cecdd7000'
-
-ERROR: for datastore  b'no such image: sha256:b3def9a4744708e197d783b59f234a359116ef737af6600b5273c94cecdd7000: No such image: sha256:b3def9a4744708e197d783b59f234a359116ef737af6600b5273c94cecdd7000'
-ERROR: The image for the service you're trying to recreate has been removed. If you continue, volume data could be lost. Consider backing up your data before continuing.
+                <h1 id="advance-a-wal-reader">Advance a WAL Reader</h1>
+<pre><code class="language-sql">SELECT pg_replication_slot_advance('slot_name',  '28/160E2250')
 </code></pre>
-<p>That is because you did not run <code>docker-compose down</code> but instead ran something like <code>docker rmi -f $(docker images -q)</code> to clean out the image cache.  Docker compose has a tempoarary image cache it uses for orchestration and when you blow away the main docker image cache docker compose will get very confused and try to recreate the image.</p>
                 
               
               
@@ -985,7 +977,7 @@ ERROR: The image for the service you're trying to recreate has been removed. If 
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../devto/devto-api/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../active-wal-readers-on-slot/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -994,19 +986,19 @@ ERROR: The image for the service you're trying to recreate has been removed. If 
               <span class="md-footer__direction">
                 Previous
               </span>
-              DevTo API
+              Active WAL Readers on Slot
             </div>
           </div>
         </a>
       
       
-        <a href="../../golang/goreleaser/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../destructively-clear-out-replication-slot/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              goreleaser
+              Destructively Clear Out Replication Slot
             </div>
           </div>
           <div class="md-footer__button md-icon">
