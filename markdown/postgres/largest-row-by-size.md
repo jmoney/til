@@ -8,3 +8,12 @@ FROM <table> AS t
 ORDER BY pg_column_size(t.*) DESC 
 LIMIT 1;
 ```
+
+Output is something like
+
+```plain
+       pk        | row_size
+------------------------+----------
+        1        |   112766
+ ```
+ 
