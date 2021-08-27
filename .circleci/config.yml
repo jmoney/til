@@ -10,6 +10,9 @@ jobs:
             - run:
                 name: list directory contents
                 command: ls
+            - run:
+                name: update apt sources release info
+                command: sudo apt-get --allow-releaseinfo-change
             - run: 
                 name: Update apt-get
                 command: sudo apt-get update -y 
