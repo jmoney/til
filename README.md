@@ -39,6 +39,7 @@
 
 * [Dynamic References Cfn](./markdown/aws/dynamic-references-cfn.md)
 * [Ec2 Instancetype Latest Generation](./markdown/aws/ec2-instancetype-latest-generation.md)
+* [Kinesis Kcl Checkpoint Table](./markdown/aws/kinesis-kcl-checkpoint-table.md)
 * [Lambda Container Image](./markdown/aws/lambda-container-image.md)
 * [Lambda Docker Container](./markdown/aws/lambda-docker-container.md)
 * [List All Instances In Autoscaling Group](./markdown/aws/list-all-instances-in-autoscaling-group.md)
