@@ -1,0 +1,3 @@
+# Cvd Update
+
+The way to officially manage downloads of the clamav virus defintion database used to be `clamdownloader.pl`.  There is a new python utility that is to replace that process in [cvdupdate](https://pypi.org/project/cvdupdate/). The way these scripts work is they are run on a internal server.  Freshclam is then configured to point at this internal server to pull the definitions from.  So all the clamav instances do not request from the virus defintion origin directly but to this internal server.  Cvdupdate is written to only pull changes when the virus definitions have actually changed.
