@@ -14,7 +14,7 @@
     
     
       
-        <title>Cannot Connect to Localhost - TIL</title>
+        <title>Cvd Update - TIL</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cannot-connect-to-localhost" class="md-skip">
+        <a href="#cvd-update" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cannot Connect to Localhost
+              Cvd Update
             
           </span>
         </div>
@@ -512,12 +512,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       <label class="md-nav__link" for="__nav_6">
         Clamav
@@ -533,11 +535,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../clamav/cvd_update/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Cvd Update
       </a>
+      
     </li>
   
 
@@ -758,14 +770,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
       <label class="md-nav__link" for="__nav_11">
         Intellij
@@ -781,21 +791,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../intellij/cannot-connect-localhost/" class="md-nav__link">
         Cannot Connect to Localhost
       </a>
-      
     </li>
   
 
@@ -1058,33 +1058,8 @@
               
                 
                 
-                <h1 id="cannot-connect-to-localhost">Cannot Connect to Localhost</h1>
-<p>This one is more of a bug TIL that has been annoying me lately.</p>
-<p>Somewhat recently IntelliJ started to fail connecting to localhost when syncing an maven based project.</p>
-<pre><code class="language-plaintext">Caused by: java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
- java.net.ConnectException: Connection refused (Connection refused)
- at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:619)
- at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
- at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
-</code></pre>
-<p>During troubleshooting, the caches were invalidated/restarted and the <code>.idea</code> directory was wiped and re-built but to no avail.</p>
-<p>Found an <a href="https://intellij-support.jetbrains.com/hc/en-us/articles/360014262940-Unable-to-import-Maven-project-import-fails-with-error-Cannot-reconnect">article</a> that was the exact problem.</p>
-<p>Turns out, docker-for-desktop was adding a localhost line to the <code>/etc/hosts</code> file and for whatever reason DNS in intellij did not like that.</p>
-<pre><code class="language-plaintext">##
-# Host Database
-#
-# localhost is used to configure the loopback interface
-# when the system is booting.  Do not change this entry.
-##
-127.0.0.1       localhost
-255.255.255.255 broadcasthost
-::1             localhost
-# Added by Docker Desktop
-# To allow the same kube context to work on the host and the container:
-127.0.0.1 kubernetes.docker.internal
-# End of section
-</code></pre>
-<p>Removing the lines for docker-for-desktop fixed the issue.</p>
+                <h1 id="cvd-update">Cvd Update</h1>
+<p>The way to officially manage downloads of the clamav virus defintion database used to be <code>clamdownloader.pl</code>.  There is a new python utility that is to replace that process in <a href="https://pypi.org/project/cvdupdate/">cvdupdate</a>. The way these scripts work is they are run on a internal server.  Freshclam is then configured to point at this internal server to pull the definitions from.  So all the clamav instances do not request from the virus defintion origin directly but to this internal server.  Cvdupdate is written to only pull changes when the virus definitions have actually changed.</p>
                 
               
               
@@ -1104,7 +1079,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../haproxy/service-discovery/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Service Discovery" rel="prev">
+        <a href="../../aws/unused-ebs-volumes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unused EBS Volumes" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1113,20 +1088,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Service Discovery
+              Unused EBS Volumes
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../javascript/regex/" class="md-footer__link md-footer__link--next" aria-label="Next: Regex" rel="next">
+        <a href="../../devto/devto-api/" class="md-footer__link md-footer__link--next" aria-label="Next: DevTo API" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Regex
+              DevTo API
             </div>
           </div>
           <div class="md-footer__button md-icon">
