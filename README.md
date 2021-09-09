@@ -10,6 +10,7 @@
 * [Asciidoc](#asciidoc)
 * [Authentication](#authentication)
 * [Aws](#aws)
+* [Clamav](#clamav)
 * [Devto](#devto)
 * [Docker](#docker)
 * [Golang](#golang)
@@ -50,6 +51,10 @@
 * [Send Command Ssm](./markdown/aws/send-command-ssm.md)
 * [Transit Gateway Cross Acount Sharing](./markdown/aws/transit-gateway-cross-acount-sharing.md)
 * [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
+
+### Clamav
+
+* [Cvd_Update](./markdown/clamav/cvd_update.md)
 
 ### Devto
 
