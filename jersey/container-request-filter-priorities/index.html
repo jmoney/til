@@ -14,7 +14,7 @@
     
     
       
-        <title>Color Text - TIL</title>
+        <title>Container Request Filter Priorities - TIL</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#color-text" class="md-skip">
+        <a href="#container-request-filter-priorities" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Color Text
+              Container Request Filter Priorities
             
           </span>
         </div>
@@ -242,14 +242,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       <label class="md-nav__link" for="__nav_3">
         Asciidoc
@@ -265,21 +263,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../asciidoc/color-text/" class="md-nav__link">
         Color Text
       </a>
-      
     </li>
   
 
@@ -812,12 +800,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
       
       <label class="md-nav__link" for="__nav_12">
         Jersey
@@ -833,11 +823,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../jersey/container-request-filter-priorities/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Container Request Filter Priorities
       </a>
+      
     </li>
   
 
@@ -1112,8 +1112,10 @@
               
                 
                 
-                <h1 id="color-text">Color Text</h1>
-<p>You can color text in asciidoc by doing <code>[&lt;color&gt;] #text#</code> where <code>&lt;color&gt;</code> is one of the <a href="http://en.wikipedia.org/wiki/Web_colors#HTML_color_names">sixteen HTML color names</a>.</p>
+                <h1 id="container-request-filter-priorities">Container Request Filter Priorities</h1>
+<p>A collection of built-in priority constants for the components that are supposed to be ordered based on their javax.annotation.Priority class-level annotation value when used or applied by the runtime.</p>
+<p>For example, filters and interceptors are grouped in chains for each of the message processing extension points: Pre, PreMatch, Post as well as ReadFrom and WriteTo. Each of these chains is sorted based on priorities which are represented as integer numbers. All chains, except Post, are sorted in ascending order; the lower the number the higher the priority. The Post filter chain is sorted in descending order to ensure that response filters are executed in reverse order.
+Components that belong to the same priority class (same integer value) are executed in an implementation-defined manner. By default, when the @Priority annotation is absent on a component, for which a priority should be applied, the USER priority value is used.</p>
                 
               
               
@@ -1133,7 +1135,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../ansible/handlers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Handlers" rel="prev">
+        <a href="../../javascript/regex/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Regex" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1142,20 +1144,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Handlers
+              Regex
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../authentication/saml-assertion-url/" class="md-footer__link md-footer__link--next" aria-label="Next: SAML Assersiont URL" rel="next">
+        <a href="../../openssl/base64/" class="md-footer__link md-footer__link--next" aria-label="Next: Base64" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              SAML Assersiont URL
+              Base64
             </div>
           </div>
           <div class="md-footer__button md-icon">
