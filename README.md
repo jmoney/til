@@ -11,15 +11,16 @@
 * [Authentication](#authentication)
 * [Aws](#aws)
 * [Clamav](#clamav)
-* [Devto](#devto)
 * [Docker](#docker)
 * [Golang](#golang)
 * [Haproxy](#haproxy)
 * [Intellij](#intellij)
 * [Javascript](#javascript)
+* [Jersey](#jersey)
 * [Markdown](#markdown)
 * [Openssl](#openssl)
 * [Postgres](#postgres)
+* [Techblog](#techblog)
 
 ---
 
@@ -56,10 +57,6 @@
 
 * [Cvd_Update](./markdown/clamav/cvd_update.md)
 
-### Devto
-
-* [Devto Api](./markdown/devto/devto-api.md)
-
 ### Docker
 
 * [Docker Compose Down](./markdown/docker/docker-compose-down.md)
@@ -83,6 +80,10 @@
 
 * [Regex](./markdown/javascript/regex.md)
 
+### Jersey
+
+* [Container Request Filter Priorities](./markdown/jersey/container-request-filter-priorities.md)
+
 ### Markdown
 
 * [Index](./markdown/index.md)
@@ -102,4 +103,9 @@
 * [Wal2Json Nextlsn](./markdown/postgres/wal2json-nextlsn.md)
 * [What Privileges Are Assigned To A User](./markdown/postgres/what-privileges-are-assigned-to-a-user.md)
 * [What User Owns Tables In A Schema](./markdown/postgres/what-user-owns-tables-in-a-schema.md)
+
+### Techblog
+
+* [Devto Api](./markdown/techblog/devto-api.md)
+* [Klipse](./markdown/techblog/klipse.md)
 
