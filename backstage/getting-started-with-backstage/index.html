@@ -14,7 +14,7 @@
     
     
       
-        <title>Largest Row By Size - TIL</title>
+        <title>Getting Started With Backstage - TIL</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#largest-row-by-size" class="md-skip">
+        <a href="#getting-started-with-backstage" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Largest Row By Size
+              Getting Started With Backstage
             
           </span>
         </div>
@@ -512,12 +512,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       <label class="md-nav__link" for="__nav_6">
         Backstage
@@ -533,11 +535,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../backstage/getting-started-with-backstage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Getting Started With Backstage
       </a>
+      
     </li>
   
 
@@ -926,14 +938,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
       <label class="md-nav__link" for="__nav_15">
         Postgres
@@ -951,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../active-wal-readers-on-slot/" class="md-nav__link">
+      <a href="../../postgres/active-wal-readers-on-slot/" class="md-nav__link">
         Active WAL Readers on Slot
       </a>
     </li>
@@ -963,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advance-walreader/" class="md-nav__link">
+      <a href="../../postgres/advance-walreader/" class="md-nav__link">
         Advance a WAL Reader
       </a>
     </li>
@@ -975,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../destructively-clear-out-replication-slot/" class="md-nav__link">
+      <a href="../../postgres/destructively-clear-out-replication-slot/" class="md-nav__link">
         Destructively Clear Out Replication Slot
       </a>
     </li>
@@ -987,7 +997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../disk-space-queries/" class="md-nav__link">
+      <a href="../../postgres/disk-space-queries/" class="md-nav__link">
         Disk Space Queries
       </a>
     </li>
@@ -997,21 +1007,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../postgres/largest-row-by-size/" class="md-nav__link">
         Largest Row By Size
       </a>
-      
     </li>
   
 
@@ -1021,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wal-senders-timeout/" class="md-nav__link">
+      <a href="../../postgres/wal-senders-timeout/" class="md-nav__link">
         WAL Sender Timeout
       </a>
     </li>
@@ -1033,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wal2json-nextlsn/" class="md-nav__link">
+      <a href="../../postgres/wal2json-nextlsn/" class="md-nav__link">
         Wal2Json Next LSN
       </a>
     </li>
@@ -1045,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-privileges-are-assigned-to-a-user/" class="md-nav__link">
+      <a href="../../postgres/what-privileges-are-assigned-to-a-user/" class="md-nav__link">
         What privileges are assigned to a user
       </a>
     </li>
@@ -1057,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-user-owns-tables-in-a-schema/" class="md-nav__link">
+      <a href="../../postgres/what-user-owns-tables-in-a-schema/" class="md-nav__link">
         What user owns tables in a schema
       </a>
     </li>
@@ -1154,18 +1154,10 @@
               
                 
                 
-                <h1 id="largest-row-by-size">Largest Row By Size</h1>
-<p>Here is how to select the PK of the row with the largest row size.</p>
-<pre><code class="language-sql">SELECT &lt;pk&gt;, pg_column_size(t.*) AS row_size 
-FROM &lt;table&gt; AS t 
-ORDER BY pg_column_size(t.*) DESC 
-LIMIT 1;
+                <h1 id="getting-started-with-backstage">Getting Started With Backstage</h1>
+<p>Run the following command to create a backstage-app.</p>
+<pre><code class="language-bash">nvm use 14.15.4 &amp;&amp; npx @backstage/create-app
 </code></pre>
-<p>Output is something like</p>
-<p><code>plain
-pk | row_size
---------+----------
-1 | 112766</code></p>
                 
               
               
@@ -1185,7 +1177,7 @@ pk | row_size
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../disk-space-queries/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Disk Space Queries" rel="prev">
+        <a href="../../aws/unused-ebs-volumes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unused EBS Volumes" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1194,20 +1186,20 @@ pk | row_size
               <span class="md-footer__direction">
                 Previous
               </span>
-              Disk Space Queries
+              Unused EBS Volumes
             </div>
           </div>
         </a>
       
       
         
-        <a href="../wal-senders-timeout/" class="md-footer__link md-footer__link--next" aria-label="Next: WAL Sender Timeout" rel="next">
+        <a href="../../clamav/cvd_update/" class="md-footer__link md-footer__link--next" aria-label="Next: Cvd Update" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              WAL Sender Timeout
+              Cvd Update
             </div>
           </div>
           <div class="md-footer__button md-icon">
