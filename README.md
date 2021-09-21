@@ -46,6 +46,7 @@
 * [Lambda Container Image](./markdown/aws/lambda-container-image.md)
 * [Lambda Docker Container](./markdown/aws/lambda-docker-container.md)
 * [List All Instances In Autoscaling Group](./markdown/aws/list-all-instances-in-autoscaling-group.md)
+* [Opensearch Best Practices](./markdown/aws/opensearch-best-practices.md)
 * [Privatelink Alignment](./markdown/aws/privatelink-alignment.md)
 * [Rds Replication Management](./markdown/aws/rds-replication-management.md)
 * [Rds Update Configurations](./markdown/aws/rds-update-configurations.md)
