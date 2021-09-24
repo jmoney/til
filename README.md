@@ -16,6 +16,7 @@
 * [Golang](#golang)
 * [Haproxy](#haproxy)
 * [Intellij](#intellij)
+* [Java](#java)
 * [Javascript](#javascript)
 * [Jersey](#jersey)
 * [Markdown](#markdown)
@@ -81,6 +82,10 @@
 ### Intellij
 
 * [Cannot Connect Localhost](./markdown/intellij/cannot-connect-localhost.md)
+
+### Java
+
+* [Hibernate Validator Optional](./markdown/java/hibernate-validator-optional.md)
 
 ### Javascript
 
