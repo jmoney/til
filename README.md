@@ -38,6 +38,7 @@
 ### Authentication
 
 * [Saml Assertion Url](./markdown/authentication/saml-assertion-url.md)
+* [Saml Relaystate](./markdown/authentication/saml-relaystate.md)
 
 ### Aws
 
@@ -110,6 +111,7 @@
 * [Destructively Clear Out Replication Slot](./markdown/postgres/destructively-clear-out-replication-slot.md)
 * [Disk Space Queries](./markdown/postgres/disk-space-queries.md)
 * [Largest Row By Size](./markdown/postgres/largest-row-by-size.md)
+* [Null Character Text Fields](./markdown/postgres/null-character-text-fields.md)
 * [Wal Senders Timeout](./markdown/postgres/wal-senders-timeout.md)
 * [Wal2Json Nextlsn](./markdown/postgres/wal2json-nextlsn.md)
 * [What Privileges Are Assigned To A User](./markdown/postgres/what-privileges-are-assigned-to-a-user.md)
