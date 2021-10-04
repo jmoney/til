@@ -1250,6 +1250,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#before-trigger" class="md-nav__link">
+    Before Trigger
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     References
   </a>
@@ -1415,6 +1422,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#before-trigger" class="md-nav__link">
+    Before Trigger
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     References
   </a>
@@ -1435,7 +1449,30 @@
                 
                 
                 <h1 id="null-character-text-fields">Null Character Text Fields</h1>
-<p>Postgres does not support the NULL character being inserted into text fields.  They need to be preprocessed before being inserted into the table or staged in a blob column, which does support NULL characters, and filtered before writing into the text field.  A trigger can be used for the second one but makes the table schema complex having to manage that across many text fields.</p>
+<p>Postgres does not support the NULL character being inserted into text fields.  They need to be preprocessed before being inserted into the table or a trigger that strips the <code>0x00</code> character which filters the column before writing into the text field.</p>
+<h2 id="before-trigger">Before Trigger</h2>
+<p>The following function and trigger are examples of how to pre-process the column before storing into the table.</p>
+<pre><code class="language-sql">CREATE OR REPLACE FUNCTION blob2text() RETURNS void AS $$
+DECLARE
+    i integer;
+BEGIN
+    --  find 0x00 and replace with space    
+    i := position(E'\\000'::bytea in NEW.text_field);
+    WHILE i &gt; 0 LOOP
+        NEW.text_field := set_byte(NEW.text_field, i-1, 20);
+        i := position(E'\\000'::bytea in NEW.text_field);
+    END LOOP
+
+    NEW.text_field = encode(NEW.text_field, 'escape');
+
+END; $$ LANGUAGE plpgsql; 
+</code></pre>
+<p>Then you would just need to create the trigger.</p>
+<pre><code class="language-sql">CREATE TRIGGER pre_process_null_character
+    BEFORE INSERT OR UPDATE ON table
+    FOR EACH ROW
+    EXECUTE PROCEDURE blob2text();
+</code></pre>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.postgresql.org/docs/9.1/sql-syntax-lexical.html#SQL-SYNTAX-STRINGS-UESCAPE">SQL SYNTAX STRING UESCAPE</a></li>
