@@ -1,6 +1,36 @@
 # Null Character Text Fields
 
-Postgres does not support the NULL character being inserted into text fields.  They need to be preprocessed before being inserted into the table or staged in a blob column, which does support NULL characters, and filtered before writing into the text field.  A trigger can be used for the second one but makes the table schema complex having to manage that across many text fields.
+Postgres does not support the NULL character being inserted into text fields.  They need to be preprocessed before being inserted into the table or a trigger that strips the `0x00` character which filters the column before writing into the text field.
+
+## Before Trigger
+
+The following function and trigger are examples of how to pre-process the column before storing into the table.
+
+```sql
+CREATE OR REPLACE FUNCTION blob2text() RETURNS void AS $$
+DECLARE
+    i integer;
+BEGIN
+    --  find 0x00 and replace with space    
+    i := position(E'\\000'::bytea in NEW.text_field);
+    WHILE i > 0 LOOP
+        NEW.text_field := set_byte(NEW.text_field, i-1, 20);
+        i := position(E'\\000'::bytea in NEW.text_field);
+    END LOOP
+
+    NEW.text_field = encode(NEW.text_field, 'escape');
+
+END; $$ LANGUAGE plpgsql; 
+```
+
+Then you would just need to create the trigger.
+
+```sql
+CREATE TRIGGER pre_process_null_character
+    BEFORE INSERT OR UPDATE ON table
+    FOR EACH ROW
+    EXECUTE PROCEDURE blob2text();
+```
 
 ## References
 
