@@ -35,3 +35,5 @@ CREATE TRIGGER pre_process_null_character
 ## References
 
 * [SQL SYNTAX STRING UESCAPE](https://www.postgresql.org/docs/9.1/sql-syntax-lexical.html#SQL-SYNTAX-STRINGS-UESCAPE)
+* [Stackoverflow](https://stackoverflow.com/questions/1347646/postgres-error-on-insert-error-invalid-byte-sequence-for-encoding-utf8-0x0)
+
