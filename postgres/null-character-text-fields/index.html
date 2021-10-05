@@ -1469,7 +1469,6 @@
 <pre><code class="language-python">writer = csv.DictWriter(f_out, fieldnames=fields)
 for line in f_in:
     writer.writerow(line.replace(b'0x00', b'')) # strip any null bytes sequence in the stream file and write the row
-
 </code></pre>
 <p>Then a <code>COPY "table" FROM STDIN CSV HEADER</code> can be issued piping in the file written above to psql.</p>
 <h2 id="before-trigger">Before Trigger</h2>
