@@ -7,11 +7,10 @@ Postgres does not support the NULL character being inserted into text fields.  T
 In Python it is simple to preprocess the text line to replace all NULL characters.
 
 ```python
-for line in f_in:
-    line = line.replace(b'0x00', b'')  # strip any null bytes sequence in the stream file
-
 writer = csv.DictWriter(f_out, fieldnames=fields)
-writer.writeheader()
+for line in f_in:
+    writer.writerow(line.replace(b'0x00', b'')) # strip any null bytes sequence in the stream file and write the row
+
 ```
 
 Then a `COPY "table" FROM STDIN CSV HEADER` can be issued piping in the file written above to psql.
