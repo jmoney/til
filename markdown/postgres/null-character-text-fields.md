@@ -10,7 +10,6 @@ In Python it is simple to preprocess the text line to replace all NULL character
 writer = csv.DictWriter(f_out, fieldnames=fields)
 for line in f_in:
     writer.writerow(line.replace(b'0x00', b'')) # strip any null bytes sequence in the stream file and write the row
-
 ```
 
 Then a `COPY "table" FROM STDIN CSV HEADER` can be issued piping in the file written above to psql.
