@@ -2,6 +2,20 @@
 
 Postgres does not support the NULL character being inserted into text fields.  They need to be preprocessed before being inserted into the table or a trigger that strips the `0x00` character which filters the column before writing into the text field.
 
+## Preprocess
+
+In Python it is simple to preprocess the text line to replace all NULL characters.
+
+```python
+for line in f_in:
+    line = line.replace(b'0x00', b'')  # strip any null bytes sequence in the stream file
+
+writer = csv.DictWriter(f_out, fieldnames=fields)
+writer.writeheader()
+```
+
+Then a `COPY "table" FROM STDIN CSV HEADER` can be issued piping in the file written above to psql.
+
 ## Before Trigger
 
 The following function and trigger are examples of how to pre-process the column before storing into the table.
@@ -36,4 +50,3 @@ CREATE TRIGGER pre_process_null_character
 
 * [SQL SYNTAX STRING UESCAPE](https://www.postgresql.org/docs/9.1/sql-syntax-lexical.html#SQL-SYNTAX-STRINGS-UESCAPE)
 * [Stackoverflow](https://stackoverflow.com/questions/1347646/postgres-error-on-insert-error-invalid-byte-sequence-for-encoding-utf8-0x0)
-
