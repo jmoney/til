@@ -112,6 +112,7 @@
 * [Disk Space Queries](./markdown/postgres/disk-space-queries.md)
 * [Largest Row By Size](./markdown/postgres/largest-row-by-size.md)
 * [Null Character Text Fields](./markdown/postgres/null-character-text-fields.md)
+* [Postgres Tls](./markdown/postgres/postgres-tls.md)
 * [Wal Senders Timeout](./markdown/postgres/wal-senders-timeout.md)
 * [Wal2Json Nextlsn](./markdown/postgres/wal2json-nextlsn.md)
 * [What Privileges Are Assigned To A User](./markdown/postgres/what-privileges-are-assigned-to-a-user.md)
