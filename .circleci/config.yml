@@ -25,6 +25,13 @@ jobs:
             - run:
                 name: Generate README
                 command: ansible-playbook playbook.yml
+    skip:
+        machine: true
+        - run:
+            name: Skip
+            command: echo "Skipping branch build"
+
+
 workflows:
     version: 2
     commit-workflow:
@@ -39,5 +46,3 @@ workflows:
                 filerers:
                     branches:
                         only: gh-pages
-                    steps:
-                        -run: echo "Skipping gh-pages"
