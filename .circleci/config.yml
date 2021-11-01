@@ -33,3 +33,11 @@ workflows:
                 filters:
                     branches:
                         only: master
+    gh-pages:
+        jobs:
+            - skip:
+                filerers:
+                    branches:
+                        only: gh-pages
+                    steps:
+                        -run: echo "Skipping gh-pages"
