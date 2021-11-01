@@ -41,9 +41,7 @@ workflows:
                 filters:
                     branches:
                         only: master
-    gh-pages-workflow:
-        jobs:
             - skip:
-                filerers:
+                filters:
                     branches:
                         only: gh-pages
