@@ -26,7 +26,6 @@ jobs:
                 name: Generate README
                 command: ansible-playbook playbook.yml
     skip:
-        machine: true
         - run:
             name: Skip
             command: echo "Skipping branch build"
