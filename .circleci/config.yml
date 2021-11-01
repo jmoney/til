@@ -26,6 +26,7 @@ jobs:
                 name: Generate README
                 command: ansible-playbook playbook.yml
     skip:
+        machine: true
         steps:
             - run:
                 name: Skip
