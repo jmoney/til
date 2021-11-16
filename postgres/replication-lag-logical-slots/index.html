@@ -14,7 +14,7 @@
     
     
       
-        <title>WAL Sender Timeout - TIL</title>
+        <title>Replication Lag Logical Slots - TIL</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wal-sender-timeout" class="md-skip">
+        <a href="#replication-lag-logical-slots" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WAL Sender Timeout
+              Replication Lag Logical Slots
             
           </span>
         </div>
@@ -1257,20 +1257,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../replication-lag-logical-slots/" class="md-nav__link">
-        Replication Lag Logical Slots
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -1283,9 +1269,23 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        WAL Sender Timeout
+        Replication Lag Logical Slots
       </a>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wal-senders-timeout/" class="md-nav__link">
+        WAL Sender Timeout
+      </a>
     </li>
   
 
@@ -1433,16 +1433,13 @@
               
                 
                 
-                <h1 id="wal-sender-timeout">WAL Sender Timeout</h1>
-<blockquote>
-<p>wal_sender_timeout (integer)
-Terminate replication connections that are inactive longer than the specified number of milliseconds. This is useful for the sending server to detect a standby crash or network outage. A value of zero disables the timeout mechanism. This parameter can only be set in the postgresql.conf file or on the server command line. The default value is 60 seconds.</p>
-</blockquote>
-<p>The following will show what the current value is for the <code>wal_sender_timeout</code>.</p>
-<pre><code class="language-sql">SHOW wal_sender_timeout;
-</code></pre>
-<p>The following will update the current value for <code>wal_sender_timeout</code> to 0 which disables the timeout.</p>
-<pre><code class="language-sql">ALTER SYSTEM SET wal_sender_timeout TO 0;
+                <h1 id="replication-lag-logical-slots">Replication Lag Logical Slots</h1>
+<p>This query will calculate the number of bytes between the current LSN and the confirmed LSN reported by the slot.</p>
+<pre><code class="language-sql">SELECT slot_name,
+    confirmed_flush_lsn,
+    pg_current_wal_lsn(),
+    (pg_current_wal_lsn() - confirmed_flush_lsn) AS lsn_distance
+FROM pg_replication_slots;
 </code></pre>
                 
               
@@ -1463,7 +1460,7 @@ Terminate replication connections that are inactive longer than the specified nu
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../replication-lag-logical-slots/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Replication Lag Logical Slots" rel="prev">
+        <a href="../postgres-tls/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Postgres TLS" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1472,20 +1469,20 @@ Terminate replication connections that are inactive longer than the specified nu
               <span class="md-footer__direction">
                 Previous
               </span>
-              Replication Lag Logical Slots
+              Postgres TLS
             </div>
           </div>
         </a>
       
       
         
-        <a href="../wal2json-nextlsn/" class="md-footer__link md-footer__link--next" aria-label="Next: Wal2Json Next LSN" rel="next">
+        <a href="../wal-senders-timeout/" class="md-footer__link md-footer__link--next" aria-label="Next: WAL Sender Timeout" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Wal2Json Next LSN
+              WAL Sender Timeout
             </div>
           </div>
           <div class="md-footer__button md-icon">
