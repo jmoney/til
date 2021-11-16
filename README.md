@@ -114,6 +114,7 @@
 * [Null Character Text Fields](./markdown/postgres/null-character-text-fields.md)
 * [Pgpassword](./markdown/postgres/PGPASSWORD.md)
 * [Postgres Tls](./markdown/postgres/postgres-tls.md)
+* [Replication Lag Logical Slots](./markdown/postgres/replication-lag-logical-slots.md)
 * [Wal Senders Timeout](./markdown/postgres/wal-senders-timeout.md)
 * [Wal2Json Nextlsn](./markdown/postgres/wal2json-nextlsn.md)
 * [What Privileges Are Assigned To A User](./markdown/postgres/what-privileges-are-assigned-to-a-user.md)
