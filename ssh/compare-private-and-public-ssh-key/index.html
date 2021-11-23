@@ -14,7 +14,7 @@
     
     
       
-        <title>Hibernate Validator Optional - TIL</title>
+        <title>Compare Private and Public SSH Key Pair - TIL</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hibernate-validator-optional" class="md-skip">
+        <a href="#compare-private-and-public-ssh-key-pair" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hibernate Validator Optional
+              Compare Private and Public SSH Key Pair
             
           </span>
         </div>
@@ -925,14 +925,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
       
       
@@ -953,21 +951,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../java/hibernate-validator-optional/" class="md-nav__link">
         Hibernate Validator Optional
       </a>
-      
     </li>
   
 
@@ -1359,12 +1347,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" checked>
       
       
       
@@ -1385,11 +1375,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../ssh/compare-private-and-public-ssh-key/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Compare Private and Public SSH Key Pair
       </a>
+      
     </li>
   
 
@@ -1495,16 +1495,10 @@
               
                 
                 
-                <h1 id="hibernate-validator-optional">Hibernate Validator Optional</h1>
-<p>Apparently, the correct way of validating a type within an optional is the following</p>
-<pre><code class="language-java">@QueryParam(&quot;origin&quot;) Optional&lt;@URL(protocol = &quot;http&quot;) String&gt; origin,
+                <h1 id="compare-private-and-public-ssh-key-pair">Compare Private and Public SSH Key Pair</h1>
+<pre><code class="language-bash">diff &lt;( ssh-keygen -y -e -f &quot;id_rsa&quot; ) &lt;( ssh-keygen -y -e -f &quot;id_rsa.pub&quot; )
 </code></pre>
-<p>instead of</p>
-<pre><code class="language-java">@QueryParam(&quot;origin&quot;) @URL(protocol = &quot;http&quot;) Optional&lt;String&gt; origin,
-</code></pre>
-<p>When doing the latter the following exception is returned</p>
-<p><code>plain
-HV000030: No validator could be found for constraint 'org.hibernate.validator.constraints.URL' validating type 'java.util.Optional&lt;java.lang.String&gt;'.</code>.</p>
+<p>The above can be used to compare the ssh key pair used for ssh to ensure that the public key matches the private key.</p>
                 
               
               
@@ -1524,7 +1518,7 @@ HV000030: No validator could be found for constraint 'org.hibernate.validator.co
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../intellij/cannot-connect-localhost/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cannot Connect to Localhost" rel="prev">
+        <a href="../../postgres/what-user-owns-tables-in-a-schema/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What user owns tables in a schema" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1533,20 +1527,20 @@ HV000030: No validator could be found for constraint 'org.hibernate.validator.co
               <span class="md-footer__direction">
                 Previous
               </span>
-              Cannot Connect to Localhost
+              What user owns tables in a schema
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../javascript/regex/" class="md-footer__link md-footer__link--next" aria-label="Next: Regex" rel="next">
+        <a href="../../techblog/devto-api/" class="md-footer__link md-footer__link--next" aria-label="Next: DevTo API" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Regex
+              DevTo API
             </div>
           </div>
           <div class="md-footer__button md-icon">
