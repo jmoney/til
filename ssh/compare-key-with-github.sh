@@ -39,7 +39,7 @@ while getopts "u:i:p:" arg; do
         p )
             p=$OPTARG
             ;;
-        h | * )
+        * )
             usage
             ;;
     esac
