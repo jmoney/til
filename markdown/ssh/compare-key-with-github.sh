@@ -28,33 +28,37 @@ validate_public_key_file() {
     done
 }
 
-while getopts "u:i:p:" arg; do
-    case "$arg" in
-        u )
-            u=$OPTARG
-            ;;
-        i )
-            i=$OPTARG
-            ;;
-        p )
-            p=$OPTARG
-            ;;
-        * )
-            usage
-            ;;
-    esac
-done
+main() {
+    while getopts "u:i:p:" arg; do
+        case "$arg" in
+            u )
+                u=$OPTARG
+                ;;
+            i )
+                i=$OPTARG
+                ;;
+            p )
+                p=$OPTARG
+                ;;
+            * )
+                usage
+                ;;
+        esac
+    done
 
-if [[ ! -z "${i}" ]]; then
-    validate_identify_key_file $u $i
-    if [[ $? -eq 1 ]]; then
-        echo "No private key match with github for $u"
+    if [[ ! -z "${i}" ]]; then
+        validate_identify_key_file $u $i
+        if [[ $? -eq 1 ]]; then
+            echo "No private key match with github for $u"
+        fi
     fi
-fi
 
-if [[ ! -z "${p}" ]]; then
-    validate_public_key_file $u $p
-    if [[ $? -eq 1 ]]; then
-        echo "No public key match with github for $u"
+    if [[ ! -z "${p}" ]]; then
+        validate_public_key_file $u $p
+        if [[ $? -eq 1 ]]; then
+            echo "No public key match with github for $u"
+        fi
     fi
-fi
+}
+
+main "$@"
