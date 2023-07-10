@@ -20,7 +20,7 @@ jobs:
               uses: jmoney/notes2rdf@2ed21c1805cb90b79bf370ab5a8ba1efb2990e67
               with:
                 notes-root: ./markdown
-                base-uri: "https://www/jmoney.dev/notes/datadotworld"
+                base-uri: "https://www/jmoney.dev/notes/til"
                 output-file: ./notes.ttl
             - name: Verify Changed files
               uses: tj-actions/verify-changed-files@v16
