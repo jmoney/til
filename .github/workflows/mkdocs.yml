@@ -4,8 +4,8 @@ on:
     branches:
       - master
     paths:
-      - README.md
-      - mkdocs/**
+      - notes.ttl
+      - mkdocs.yml
   workflow_dispatch:
 
 jobs:
