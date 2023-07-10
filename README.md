@@ -1,6 +1,7 @@
-# TIL
+# Notes
 
-> A collection of knowledge I learn throughout the day.  Do not want to write a full blown blog on the topics but do want to record them for other folks who stumble upon them or myself, I have a terrible memory.
+
+> I have a terrible memory so need to write this all down.
 
 ---
 
@@ -25,6 +26,7 @@
 * [Ssh](#ssh)
 * [Techblog](#techblog)
 
+
 ---
 
 ### Ansible
@@ -32,14 +34,17 @@
 * [Facts](./markdown/ansible/facts.md)
 * [Handlers](./markdown/ansible/handlers.md)
 
+
 ### Asciidoc
 
 * [Color Text](./markdown/asciidoc/color-text.md)
+
 
 ### Authentication
 
 * [Saml Assertion Url](./markdown/authentication/saml-assertion-url.md)
 * [Saml Relaystate](./markdown/authentication/saml-relaystate.md)
+
 
 ### Aws
 
@@ -58,21 +63,26 @@
 * [Transit Gateway Cross Acount Sharing](./markdown/aws/transit-gateway-cross-acount-sharing.md)
 * [Unused Ebs Volumes](./markdown/aws/unused-ebs-volumes.md)
 
+
 ### Backstage
 
 * [Getting Started With Backstage](./markdown/backstage/getting-started-with-backstage.md)
+
 
 ### Clamav
 
 * [Cvd_Update](./markdown/clamav/cvd_update.md)
 
+
 ### Docker
 
 * [Docker Compose Down](./markdown/docker/docker-compose-down.md)
 
+
 ### Golang
 
 * [Goreleaser](./markdown/golang/goreleaser.md)
+
 
 ### Haproxy
 
@@ -81,39 +91,46 @@
 * [Haproxy And Lua](./markdown/haproxy/haproxy-and-lua.md)
 * [Service Discovery](./markdown/haproxy/service-discovery.md)
 
+
 ### Intellij
 
 * [Cannot Connect Localhost](./markdown/intellij/cannot-connect-localhost.md)
+
 
 ### Java
 
 * [Hibernate Validator Optional](./markdown/java/hibernate-validator-optional.md)
 
+
 ### Javascript
 
 * [Regex](./markdown/javascript/regex.md)
+
 
 ### Jersey
 
 * [Container Request Filter Priorities](./markdown/jersey/container-request-filter-priorities.md)
 
+
 ### Markdown
 
 * [Index](./markdown/index.md)
+
 
 ### Openssl
 
 * [Base64](./markdown/openssl/base64.md)
 
+
 ### Postgres
 
+* [Pgpassword](./markdown/postgres/PGPASSWORD.md)
 * [Active Wal Readers On Slot](./markdown/postgres/active-wal-readers-on-slot.md)
 * [Advance Walreader](./markdown/postgres/advance-walreader.md)
 * [Destructively Clear Out Replication Slot](./markdown/postgres/destructively-clear-out-replication-slot.md)
 * [Disk Space Queries](./markdown/postgres/disk-space-queries.md)
 * [Largest Row By Size](./markdown/postgres/largest-row-by-size.md)
 * [Null Character Text Fields](./markdown/postgres/null-character-text-fields.md)
-* [Pgpassword](./markdown/postgres/PGPASSWORD.md)
 * [Postgres Connection With Replication Api](./markdown/postgres/postgres-connection-with-replication-api.md)
 * [Postgres Tls](./markdown/postgres/postgres-tls.md)
 * [Replication Lag Logical Slots](./markdown/postgres/replication-lag-logical-slots.md)
@@ -122,12 +139,16 @@
 * [What Privileges Are Assigned To A User](./markdown/postgres/what-privileges-are-assigned-to-a-user.md)
 * [What User Owns Tables In A Schema](./markdown/postgres/what-user-owns-tables-in-a-schema.md)
 
+
 ### Ssh
 
 * [Compare Private And Public Ssh Key](./markdown/ssh/compare-private-and-public-ssh-key.md)
+
 
 ### Techblog
 
 * [Devto Api](./markdown/techblog/devto-api.md)
 * [Klipse](./markdown/techblog/klipse.md)
+
+
 
