@@ -1,0 +1,328 @@
+@base <https://www/jmoney.dev/notes/datadotworld#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix notes: <https://www.jmoney.dev/notes#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<NoteActiveWalReadersOnSlot> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "active-wal-readers-on-slot.md"^^xsd:string ;
+    notes:title "ActiveWalReadersOnSlot"^^xsd:string .
+
+<NoteAdvanceWalreader> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "advance-walreader.md"^^xsd:string ;
+    notes:title "AdvanceWalreader"^^xsd:string .
+
+<NoteBase64> a notes:Note ;
+    dcterms:isPartOf <TopicOpenssl> ;
+    notes:filename "base64.md"^^xsd:string ;
+    notes:title "Base64"^^xsd:string .
+
+<NoteCannotConnectLocalhost> a notes:Note ;
+    dcterms:isPartOf <TopicIntellij> ;
+    notes:filename "cannot-connect-localhost.md"^^xsd:string ;
+    notes:title "CannotConnectLocalhost"^^xsd:string .
+
+<NoteColorText> a notes:Note ;
+    dcterms:isPartOf <TopicAsciidoc> ;
+    notes:filename "color-text.md"^^xsd:string ;
+    notes:title "ColorText"^^xsd:string .
+
+<NoteComparePrivateAndPublicSshKey> a notes:Note ;
+    dcterms:isPartOf <TopicSsh> ;
+    notes:filename "compare-private-and-public-ssh-key.md"^^xsd:string ;
+    notes:title "ComparePrivateAndPublicSshKey"^^xsd:string .
+
+<NoteContainerRequestFilterPriorities> a notes:Note ;
+    dcterms:isPartOf <TopicJersey> ;
+    notes:filename "container-request-filter-priorities.md"^^xsd:string ;
+    notes:title "ContainerRequestFilterPriorities"^^xsd:string .
+
+<NoteCvdUpdate> a notes:Note ;
+    dcterms:isPartOf <TopicClamav> ;
+    notes:filename "cvd_update.md"^^xsd:string ;
+    notes:title "CvdUpdate"^^xsd:string .
+
+<NoteDeferServerDnsLookups> a notes:Note ;
+    dcterms:isPartOf <TopicHaproxy> ;
+    notes:filename "defer-server-dns-lookups.md"^^xsd:string ;
+    notes:title "DeferServerDnsLookups"^^xsd:string .
+
+<NoteDestructivelyClearOutReplicationSlot> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "destructively-clear-out-replication-slot.md"^^xsd:string ;
+    notes:title "DestructivelyClearOutReplicationSlot"^^xsd:string .
+
+<NoteDevtoApi> a notes:Note ;
+    dcterms:isPartOf <TopicTechblog> ;
+    notes:filename "devto-api.md"^^xsd:string ;
+    notes:title "DevtoApi"^^xsd:string .
+
+<NoteDiskSpaceQueries> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "disk-space-queries.md"^^xsd:string ;
+    notes:title "DiskSpaceQueries"^^xsd:string .
+
+<NoteDockerComposeDown> a notes:Note ;
+    dcterms:isPartOf <TopicDocker> ;
+    notes:filename "docker-compose-down.md"^^xsd:string ;
+    notes:title "DockerComposeDown"^^xsd:string .
+
+<NoteDynamicReferencesCfn> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "dynamic-references-cfn.md"^^xsd:string ;
+    notes:title "DynamicReferencesCfn"^^xsd:string .
+
+<NoteEc2InstancetypeLatestGeneration> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "ec2-instancetype-latest-generation.md"^^xsd:string ;
+    notes:title "Ec2InstancetypeLatestGeneration"^^xsd:string .
+
+<NoteFacts> a notes:Note ;
+    dcterms:isPartOf <TopicAnsible> ;
+    notes:filename "facts.md"^^xsd:string ;
+    notes:title "Facts"^^xsd:string .
+
+<NoteFailover> a notes:Note ;
+    dcterms:isPartOf <TopicHaproxy> ;
+    notes:filename "failover.md"^^xsd:string ;
+    notes:title "Failover"^^xsd:string .
+
+<NoteGettingStartedWithBackstage> a notes:Note ;
+    dcterms:isPartOf <TopicBackstage> ;
+    notes:filename "getting-started-with-backstage.md"^^xsd:string ;
+    notes:title "GettingStartedWithBackstage"^^xsd:string .
+
+<NoteGoreleaser> a notes:Note ;
+    dcterms:isPartOf <TopicGolang> ;
+    notes:filename "goreleaser.md"^^xsd:string ;
+    notes:title "Goreleaser"^^xsd:string .
+
+<NoteHandlers> a notes:Note ;
+    dcterms:isPartOf <TopicAnsible> ;
+    notes:filename "handlers.md"^^xsd:string ;
+    notes:title "Handlers"^^xsd:string .
+
+<NoteHaproxyAndLua> a notes:Note ;
+    dcterms:isPartOf <TopicHaproxy> ;
+    notes:filename "haproxy-and-lua.md"^^xsd:string ;
+    notes:title "HaproxyAndLua"^^xsd:string .
+
+<NoteHibernateValidatorOptional> a notes:Note ;
+    dcterms:isPartOf <TopicJava> ;
+    notes:filename "hibernate-validator-optional.md"^^xsd:string ;
+    notes:title "HibernateValidatorOptional"^^xsd:string .
+
+<NoteIndex> a notes:Note ;
+    dcterms:isPartOf <TopicMarkdown> ;
+    notes:filename "index.md"^^xsd:string ;
+    notes:title "Index"^^xsd:string .
+
+<NoteKinesisKclCheckpointTable> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "kinesis-kcl-checkpoint-table.md"^^xsd:string ;
+    notes:title "KinesisKclCheckpointTable"^^xsd:string .
+
+<NoteKlipse> a notes:Note ;
+    dcterms:isPartOf <TopicTechblog> ;
+    notes:filename "klipse.md"^^xsd:string ;
+    notes:title "Klipse"^^xsd:string .
+
+<NoteLambdaContainerImage> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "lambda-container-image.md"^^xsd:string ;
+    notes:title "LambdaContainerImage"^^xsd:string .
+
+<NoteLambdaDockerContainer> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "lambda-docker-container.md"^^xsd:string ;
+    notes:title "LambdaDockerContainer"^^xsd:string .
+
+<NoteLargestRowBySize> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "largest-row-by-size.md"^^xsd:string ;
+    notes:title "LargestRowBySize"^^xsd:string .
+
+<NoteListAllInstancesInAutoscalingGroup> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "list-all-instances-in-autoscaling-group.md"^^xsd:string ;
+    notes:title "ListAllInstancesInAutoscalingGroup"^^xsd:string .
+
+<NoteNullCharacterTextFields> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "null-character-text-fields.md"^^xsd:string ;
+    notes:title "NullCharacterTextFields"^^xsd:string .
+
+<NoteOpensearchBestPractices> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "opensearch-best-practices.md"^^xsd:string ;
+    notes:title "OpensearchBestPractices"^^xsd:string .
+
+<NotePgpassword> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "PGPASSWORD.md"^^xsd:string ;
+    notes:title "Pgpassword"^^xsd:string .
+
+<NotePostgresConnectionWithReplicationApi> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "postgres-connection-with-replication-api.md"^^xsd:string ;
+    notes:title "PostgresConnectionWithReplicationApi"^^xsd:string .
+
+<NotePostgresTls> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "postgres-tls.md"^^xsd:string ;
+    notes:title "PostgresTls"^^xsd:string .
+
+<NotePrivatelinkAlignment> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "privatelink-alignment.md"^^xsd:string ;
+    notes:title "PrivatelinkAlignment"^^xsd:string .
+
+<NoteRdsReplicationManagement> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "rds-replication-management.md"^^xsd:string ;
+    notes:title "RdsReplicationManagement"^^xsd:string .
+
+<NoteRdsUpdateConfigurations> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "rds-update-configurations.md"^^xsd:string ;
+    notes:title "RdsUpdateConfigurations"^^xsd:string .
+
+<NoteRegex> a notes:Note ;
+    dcterms:isPartOf <TopicJavascript> ;
+    notes:filename "regex.md"^^xsd:string ;
+    notes:title "Regex"^^xsd:string .
+
+<NoteReplicationLagLogicalSlots> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "replication-lag-logical-slots.md"^^xsd:string ;
+    notes:title "ReplicationLagLogicalSlots"^^xsd:string .
+
+<NoteSamlAssertionUrl> a notes:Note ;
+    dcterms:isPartOf <TopicAuthentication> ;
+    notes:filename "saml-assertion-url.md"^^xsd:string ;
+    notes:title "SamlAssertionUrl"^^xsd:string .
+
+<NoteSamlRelaystate> a notes:Note ;
+    dcterms:isPartOf <TopicAuthentication> ;
+    notes:filename "saml-relaystate.md"^^xsd:string ;
+    notes:title "SamlRelaystate"^^xsd:string .
+
+<NoteSecretsManagerDecryt> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "secrets-manager-decryt.md"^^xsd:string ;
+    notes:title "SecretsManagerDecryt"^^xsd:string .
+
+<NoteSendCommandSsm> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "send-command-ssm.md"^^xsd:string ;
+    notes:title "SendCommandSsm"^^xsd:string .
+
+<NoteServiceDiscovery> a notes:Note ;
+    dcterms:isPartOf <TopicHaproxy> ;
+    notes:filename "service-discovery.md"^^xsd:string ;
+    notes:title "ServiceDiscovery"^^xsd:string .
+
+<NoteTransitGatewayCrossAcountSharing> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "transit-gateway-cross-acount-sharing.md"^^xsd:string ;
+    notes:title "TransitGatewayCrossAcountSharing"^^xsd:string .
+
+<NoteUnusedEbsVolumes> a notes:Note ;
+    dcterms:isPartOf <TopicAws> ;
+    notes:filename "unused-ebs-volumes.md"^^xsd:string ;
+    notes:title "UnusedEbsVolumes"^^xsd:string .
+
+<NoteWal2JsonNextlsn> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "wal2json-nextlsn.md"^^xsd:string ;
+    notes:title "Wal2JsonNextlsn"^^xsd:string .
+
+<NoteWalSendersTimeout> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "wal-senders-timeout.md"^^xsd:string ;
+    notes:title "WalSendersTimeout"^^xsd:string .
+
+<NoteWhatPrivilegesAreAssignedToAUser> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "what-privileges-are-assigned-to-a-user.md"^^xsd:string ;
+    notes:title "WhatPrivilegesAreAssignedToAUser"^^xsd:string .
+
+<NoteWhatUserOwnsTablesInASchema> a notes:Note ;
+    dcterms:isPartOf <TopicPostgres> ;
+    notes:filename "what-user-owns-tables-in-a-schema.md"^^xsd:string ;
+    notes:title "WhatUserOwnsTablesInASchema"^^xsd:string .
+
+<TopicAsciidoc> a notes:Topic ;
+    notes:Path "markdown/asciidoc"^^xsd:string ;
+    notes:topic "Asciidoc"^^xsd:string .
+
+<TopicBackstage> a notes:Topic ;
+    notes:Path "markdown/backstage"^^xsd:string ;
+    notes:topic "Backstage"^^xsd:string .
+
+<TopicClamav> a notes:Topic ;
+    notes:Path "markdown/clamav"^^xsd:string ;
+    notes:topic "Clamav"^^xsd:string .
+
+<TopicDocker> a notes:Topic ;
+    notes:Path "markdown/docker"^^xsd:string ;
+    notes:topic "Docker"^^xsd:string .
+
+<TopicGolang> a notes:Topic ;
+    notes:Path "markdown/golang"^^xsd:string ;
+    notes:topic "Golang"^^xsd:string .
+
+<TopicIntellij> a notes:Topic ;
+    notes:Path "markdown/intellij"^^xsd:string ;
+    notes:topic "Intellij"^^xsd:string .
+
+<TopicJava> a notes:Topic ;
+    notes:Path "markdown/java"^^xsd:string ;
+    notes:topic "Java"^^xsd:string .
+
+<TopicJavascript> a notes:Topic ;
+    notes:Path "markdown/javascript"^^xsd:string ;
+    notes:topic "Javascript"^^xsd:string .
+
+<TopicJersey> a notes:Topic ;
+    notes:Path "markdown/jersey"^^xsd:string ;
+    notes:topic "Jersey"^^xsd:string .
+
+<TopicMarkdown> a notes:Topic ;
+    notes:Path "markdown"^^xsd:string ;
+    notes:topic "Markdown"^^xsd:string .
+
+<TopicOpenssl> a notes:Topic ;
+    notes:Path "markdown/openssl"^^xsd:string ;
+    notes:topic "Openssl"^^xsd:string .
+
+<TopicSsh> a notes:Topic ;
+    notes:Path "markdown/ssh"^^xsd:string ;
+    notes:topic "Ssh"^^xsd:string .
+
+<TopicAnsible> a notes:Topic ;
+    notes:Path "markdown/ansible"^^xsd:string ;
+    notes:topic "Ansible"^^xsd:string .
+
+<TopicAuthentication> a notes:Topic ;
+    notes:Path "markdown/authentication"^^xsd:string ;
+    notes:topic "Authentication"^^xsd:string .
+
+<TopicTechblog> a notes:Topic ;
+    notes:Path "markdown/techblog"^^xsd:string ;
+    notes:topic "Techblog"^^xsd:string .
+
+<TopicHaproxy> a notes:Topic ;
+    notes:Path "markdown/haproxy"^^xsd:string ;
+    notes:topic "Haproxy"^^xsd:string .
+
+<TopicAws> a notes:Topic ;
+    notes:Path "markdown/aws"^^xsd:string ;
+    notes:topic "Aws"^^xsd:string .
+
+<TopicPostgres> a notes:Topic ;
+    notes:Path "markdown/postgres"^^xsd:string ;
+    notes:topic "Postgres"^^xsd:string .
+
+
