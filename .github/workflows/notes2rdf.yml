@@ -57,7 +57,7 @@ jobs:
                 token: ${{ secrets.DATAWORLD_PAT }}
                 agentdatasetid: "jmoney8080/ddw-catalogs"
                 file: notes.ttl
-                filename: test-notes.ttl
+                filename: til-notes.ttl
     generate-readme-md:
         runs-on: ubuntu-latest
         needs: generate-ttl
