@@ -325,7 +325,7 @@
     dcterms:isPartOf <BinderTil> ;
     notes:name "Postgres"^^xsd:string .
 
-<BinderTil> a notes:Divider ;
+<BinderTil> a notes:Binder ;
     notes:name "Til"^^xsd:string .
 
 
