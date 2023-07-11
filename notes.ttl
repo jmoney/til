@@ -1,328 +1,331 @@
-@base <https://www/jmoney.dev/notes/til#> .
+@base <https://www/jmoney.dev/notes/notes#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix notes: <https://www.jmoney.dev/notes#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <NoteActiveWalReadersOnSlot> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/active-wal-readers-on-slot.md"^^xsd:string ;
     notes:title "ActiveWalReadersOnSlot"^^xsd:string .
 
 <NoteAdvanceWalreader> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/advance-walreader.md"^^xsd:string ;
     notes:title "AdvanceWalreader"^^xsd:string .
 
 <NoteBase64> a notes:Note ;
-    dcterms:isPartOf <TopicOpenssl> ;
+    dcterms:isPartOf <DividerOpenssl> ;
     notes:filename "markdown/openssl/base64.md"^^xsd:string ;
     notes:title "Base64"^^xsd:string .
 
 <NoteCannotConnectLocalhost> a notes:Note ;
-    dcterms:isPartOf <TopicIntellij> ;
+    dcterms:isPartOf <DividerIntellij> ;
     notes:filename "markdown/intellij/cannot-connect-localhost.md"^^xsd:string ;
     notes:title "CannotConnectLocalhost"^^xsd:string .
 
 <NoteColorText> a notes:Note ;
-    dcterms:isPartOf <TopicAsciidoc> ;
+    dcterms:isPartOf <DividerAsciidoc> ;
     notes:filename "markdown/asciidoc/color-text.md"^^xsd:string ;
     notes:title "ColorText"^^xsd:string .
 
 <NoteComparePrivateAndPublicSshKey> a notes:Note ;
-    dcterms:isPartOf <TopicSsh> ;
+    dcterms:isPartOf <DividerSsh> ;
     notes:filename "markdown/ssh/compare-private-and-public-ssh-key.md"^^xsd:string ;
     notes:title "ComparePrivateAndPublicSshKey"^^xsd:string .
 
 <NoteContainerRequestFilterPriorities> a notes:Note ;
-    dcterms:isPartOf <TopicJersey> ;
+    dcterms:isPartOf <DividerJersey> ;
     notes:filename "markdown/jersey/container-request-filter-priorities.md"^^xsd:string ;
     notes:title "ContainerRequestFilterPriorities"^^xsd:string .
 
 <NoteCvdUpdate> a notes:Note ;
-    dcterms:isPartOf <TopicClamav> ;
+    dcterms:isPartOf <DividerClamav> ;
     notes:filename "markdown/clamav/cvd_update.md"^^xsd:string ;
     notes:title "CvdUpdate"^^xsd:string .
 
 <NoteDeferServerDnsLookups> a notes:Note ;
-    dcterms:isPartOf <TopicHaproxy> ;
+    dcterms:isPartOf <DividerHaproxy> ;
     notes:filename "markdown/haproxy/defer-server-dns-lookups.md"^^xsd:string ;
     notes:title "DeferServerDnsLookups"^^xsd:string .
 
 <NoteDestructivelyClearOutReplicationSlot> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/destructively-clear-out-replication-slot.md"^^xsd:string ;
     notes:title "DestructivelyClearOutReplicationSlot"^^xsd:string .
 
 <NoteDevtoApi> a notes:Note ;
-    dcterms:isPartOf <TopicTechblog> ;
+    dcterms:isPartOf <DividerTechblog> ;
     notes:filename "markdown/techblog/devto-api.md"^^xsd:string ;
     notes:title "DevtoApi"^^xsd:string .
 
 <NoteDiskSpaceQueries> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/disk-space-queries.md"^^xsd:string ;
     notes:title "DiskSpaceQueries"^^xsd:string .
 
 <NoteDockerComposeDown> a notes:Note ;
-    dcterms:isPartOf <TopicDocker> ;
+    dcterms:isPartOf <DividerDocker> ;
     notes:filename "markdown/docker/docker-compose-down.md"^^xsd:string ;
     notes:title "DockerComposeDown"^^xsd:string .
 
 <NoteDynamicReferencesCfn> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/dynamic-references-cfn.md"^^xsd:string ;
     notes:title "DynamicReferencesCfn"^^xsd:string .
 
 <NoteEc2InstancetypeLatestGeneration> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/ec2-instancetype-latest-generation.md"^^xsd:string ;
     notes:title "Ec2InstancetypeLatestGeneration"^^xsd:string .
 
 <NoteFacts> a notes:Note ;
-    dcterms:isPartOf <TopicAnsible> ;
+    dcterms:isPartOf <DividerAnsible> ;
     notes:filename "markdown/ansible/facts.md"^^xsd:string ;
     notes:title "Facts"^^xsd:string .
 
 <NoteFailover> a notes:Note ;
-    dcterms:isPartOf <TopicHaproxy> ;
+    dcterms:isPartOf <DividerHaproxy> ;
     notes:filename "markdown/haproxy/failover.md"^^xsd:string ;
     notes:title "Failover"^^xsd:string .
 
 <NoteGettingStartedWithBackstage> a notes:Note ;
-    dcterms:isPartOf <TopicBackstage> ;
+    dcterms:isPartOf <DividerBackstage> ;
     notes:filename "markdown/backstage/getting-started-with-backstage.md"^^xsd:string ;
     notes:title "GettingStartedWithBackstage"^^xsd:string .
 
 <NoteGoreleaser> a notes:Note ;
-    dcterms:isPartOf <TopicGolang> ;
+    dcterms:isPartOf <DividerGolang> ;
     notes:filename "markdown/golang/goreleaser.md"^^xsd:string ;
     notes:title "Goreleaser"^^xsd:string .
 
 <NoteHandlers> a notes:Note ;
-    dcterms:isPartOf <TopicAnsible> ;
+    dcterms:isPartOf <DividerAnsible> ;
     notes:filename "markdown/ansible/handlers.md"^^xsd:string ;
     notes:title "Handlers"^^xsd:string .
 
 <NoteHaproxyAndLua> a notes:Note ;
-    dcterms:isPartOf <TopicHaproxy> ;
+    dcterms:isPartOf <DividerHaproxy> ;
     notes:filename "markdown/haproxy/haproxy-and-lua.md"^^xsd:string ;
     notes:title "HaproxyAndLua"^^xsd:string .
 
 <NoteHibernateValidatorOptional> a notes:Note ;
-    dcterms:isPartOf <TopicJava> ;
+    dcterms:isPartOf <DividerJava> ;
     notes:filename "markdown/java/hibernate-validator-optional.md"^^xsd:string ;
     notes:title "HibernateValidatorOptional"^^xsd:string .
 
 <NoteIndex> a notes:Note ;
-    dcterms:isPartOf <TopicMarkdown> ;
+    dcterms:isPartOf <DividerMarkdown> ;
     notes:filename "markdown/index.md"^^xsd:string ;
     notes:title "Index"^^xsd:string .
 
 <NoteKinesisKclCheckpointTable> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/kinesis-kcl-checkpoint-table.md"^^xsd:string ;
     notes:title "KinesisKclCheckpointTable"^^xsd:string .
 
 <NoteKlipse> a notes:Note ;
-    dcterms:isPartOf <TopicTechblog> ;
+    dcterms:isPartOf <DividerTechblog> ;
     notes:filename "markdown/techblog/klipse.md"^^xsd:string ;
     notes:title "Klipse"^^xsd:string .
 
 <NoteLambdaContainerImage> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/lambda-container-image.md"^^xsd:string ;
     notes:title "LambdaContainerImage"^^xsd:string .
 
 <NoteLambdaDockerContainer> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/lambda-docker-container.md"^^xsd:string ;
     notes:title "LambdaDockerContainer"^^xsd:string .
 
 <NoteLargestRowBySize> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/largest-row-by-size.md"^^xsd:string ;
     notes:title "LargestRowBySize"^^xsd:string .
 
 <NoteListAllInstancesInAutoscalingGroup> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/list-all-instances-in-autoscaling-group.md"^^xsd:string ;
     notes:title "ListAllInstancesInAutoscalingGroup"^^xsd:string .
 
 <NoteNullCharacterTextFields> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/null-character-text-fields.md"^^xsd:string ;
     notes:title "NullCharacterTextFields"^^xsd:string .
 
 <NoteOpensearchBestPractices> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/opensearch-best-practices.md"^^xsd:string ;
     notes:title "OpensearchBestPractices"^^xsd:string .
 
 <NotePgpassword> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/PGPASSWORD.md"^^xsd:string ;
     notes:title "Pgpassword"^^xsd:string .
 
 <NotePostgresConnectionWithReplicationApi> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/postgres-connection-with-replication-api.md"^^xsd:string ;
     notes:title "PostgresConnectionWithReplicationApi"^^xsd:string .
 
 <NotePostgresTls> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/postgres-tls.md"^^xsd:string ;
     notes:title "PostgresTls"^^xsd:string .
 
 <NotePrivatelinkAlignment> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/privatelink-alignment.md"^^xsd:string ;
     notes:title "PrivatelinkAlignment"^^xsd:string .
 
 <NoteRdsReplicationManagement> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/rds-replication-management.md"^^xsd:string ;
     notes:title "RdsReplicationManagement"^^xsd:string .
 
 <NoteRdsUpdateConfigurations> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/rds-update-configurations.md"^^xsd:string ;
     notes:title "RdsUpdateConfigurations"^^xsd:string .
 
 <NoteRegex> a notes:Note ;
-    dcterms:isPartOf <TopicJavascript> ;
+    dcterms:isPartOf <DividerJavascript> ;
     notes:filename "markdown/javascript/regex.md"^^xsd:string ;
     notes:title "Regex"^^xsd:string .
 
 <NoteReplicationLagLogicalSlots> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/replication-lag-logical-slots.md"^^xsd:string ;
     notes:title "ReplicationLagLogicalSlots"^^xsd:string .
 
 <NoteSamlAssertionUrl> a notes:Note ;
-    dcterms:isPartOf <TopicAuthentication> ;
+    dcterms:isPartOf <DividerAuthentication> ;
     notes:filename "markdown/authentication/saml-assertion-url.md"^^xsd:string ;
     notes:title "SamlAssertionUrl"^^xsd:string .
 
 <NoteSamlRelaystate> a notes:Note ;
-    dcterms:isPartOf <TopicAuthentication> ;
+    dcterms:isPartOf <DividerAuthentication> ;
     notes:filename "markdown/authentication/saml-relaystate.md"^^xsd:string ;
     notes:title "SamlRelaystate"^^xsd:string .
 
 <NoteSecretsManagerDecryt> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/secrets-manager-decryt.md"^^xsd:string ;
     notes:title "SecretsManagerDecryt"^^xsd:string .
 
 <NoteSendCommandSsm> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/send-command-ssm.md"^^xsd:string ;
     notes:title "SendCommandSsm"^^xsd:string .
 
 <NoteServiceDiscovery> a notes:Note ;
-    dcterms:isPartOf <TopicHaproxy> ;
+    dcterms:isPartOf <DividerHaproxy> ;
     notes:filename "markdown/haproxy/service-discovery.md"^^xsd:string ;
     notes:title "ServiceDiscovery"^^xsd:string .
 
 <NoteTransitGatewayCrossAcountSharing> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/transit-gateway-cross-acount-sharing.md"^^xsd:string ;
     notes:title "TransitGatewayCrossAcountSharing"^^xsd:string .
 
 <NoteUnusedEbsVolumes> a notes:Note ;
-    dcterms:isPartOf <TopicAws> ;
+    dcterms:isPartOf <DividerAws> ;
     notes:filename "markdown/aws/unused-ebs-volumes.md"^^xsd:string ;
     notes:title "UnusedEbsVolumes"^^xsd:string .
 
 <NoteWal2JsonNextlsn> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/wal2json-nextlsn.md"^^xsd:string ;
     notes:title "Wal2JsonNextlsn"^^xsd:string .
 
 <NoteWalSendersTimeout> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/wal-senders-timeout.md"^^xsd:string ;
     notes:title "WalSendersTimeout"^^xsd:string .
 
 <NoteWhatPrivilegesAreAssignedToAUser> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/what-privileges-are-assigned-to-a-user.md"^^xsd:string ;
     notes:title "WhatPrivilegesAreAssignedToAUser"^^xsd:string .
 
 <NoteWhatUserOwnsTablesInASchema> a notes:Note ;
-    dcterms:isPartOf <TopicPostgres> ;
+    dcterms:isPartOf <DividerPostgres> ;
     notes:filename "markdown/postgres/what-user-owns-tables-in-a-schema.md"^^xsd:string ;
     notes:title "WhatUserOwnsTablesInASchema"^^xsd:string .
 
-<TopicAsciidoc> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerAsciidoc> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Asciidoc"^^xsd:string .
 
-<TopicBackstage> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerBackstage> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Backstage"^^xsd:string .
 
-<TopicClamav> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerClamav> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Clamav"^^xsd:string .
 
-<TopicDocker> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerDocker> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Docker"^^xsd:string .
 
-<TopicGolang> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerGolang> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Golang"^^xsd:string .
 
-<TopicIntellij> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerIntellij> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Intellij"^^xsd:string .
 
-<TopicJava> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerJava> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Java"^^xsd:string .
 
-<TopicJavascript> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerJavascript> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Javascript"^^xsd:string .
 
-<TopicJersey> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerJersey> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Jersey"^^xsd:string .
 
-<TopicMarkdown> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerMarkdown> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Markdown"^^xsd:string .
 
-<TopicOpenssl> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerOpenssl> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Openssl"^^xsd:string .
 
-<TopicSsh> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerSsh> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Ssh"^^xsd:string .
 
-<TopicAnsible> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerAnsible> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Ansible"^^xsd:string .
 
-<TopicAuthentication> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerAuthentication> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Authentication"^^xsd:string .
 
-<TopicTechblog> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerTechblog> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Techblog"^^xsd:string .
 
-<TopicHaproxy> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerHaproxy> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Haproxy"^^xsd:string .
 
-<TopicAws> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerAws> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Aws"^^xsd:string .
 
-<TopicPostgres> a notes:Topic ;
-    dcterms:isPartOf <DividerTil> ;
+<DividerPostgres> a notes:Divider ;
+    dcterms:isPartOf <BinderTil> ;
     notes:name "Postgres"^^xsd:string .
+
+<BinderTil> a notes:Divider ;
+    notes:name "Til"^^xsd:string .
 
 
