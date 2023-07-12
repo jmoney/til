@@ -253,78 +253,78 @@
     notes:title "WhatUserOwnsTablesInASchema"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerAsciidoc> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Asciidoc"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerBackstage> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Backstage"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerClamav> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Clamav"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerDocker> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Docker"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerGolang> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Golang"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerIntellij> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Intellij"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerJava> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Java"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerJavascript> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Javascript"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerJersey> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Jersey"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerMarkdown> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Markdown"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerOpenssl> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Openssl"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerSsh> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Ssh"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerAnsible> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Ansible"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerAuthentication> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Authentication"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerTechblog> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Techblog"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerHaproxy> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Haproxy"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerAws> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Aws"^^xsd:string .
 
 <https://www/jmoney.dev/notes/til#DividerPostgres> a notes:Divider ;
-    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#BinderTil> ;
     notes:name "Postgres"^^xsd:string .
 
-<tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> a notes:Binder ;
-    notes:name "Https://Www/Jmoney.Dev/Notes/Til#"^^xsd:string .
+<https://www/jmoney.dev/notes/til#BinderTil> a notes:Binder ;
+    notes:name "Til"^^xsd:string .
 
 
