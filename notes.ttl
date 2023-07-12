@@ -1,331 +1,330 @@
-@base <https://www/jmoney.dev/notes/til#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix notes: <https://www.jmoney.dev/notes#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<NoteActiveWalReadersOnSlot> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteActiveWalReadersOnSlot> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/active-wal-readers-on-slot.md"^^xsd:string ;
     notes:title "ActiveWalReadersOnSlot"^^xsd:string .
 
-<NoteAdvanceWalreader> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteAdvanceWalreader> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/advance-walreader.md"^^xsd:string ;
     notes:title "AdvanceWalreader"^^xsd:string .
 
-<NoteBase64> a notes:Note ;
-    dcterms:isPartOf <DividerOpenssl> ;
+<https://www/jmoney.dev/notes/til#NoteBase64> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerOpenssl> ;
     notes:filename "markdown/openssl/base64.md"^^xsd:string ;
     notes:title "Base64"^^xsd:string .
 
-<NoteCannotConnectLocalhost> a notes:Note ;
-    dcterms:isPartOf <DividerIntellij> ;
+<https://www/jmoney.dev/notes/til#NoteCannotConnectLocalhost> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerIntellij> ;
     notes:filename "markdown/intellij/cannot-connect-localhost.md"^^xsd:string ;
     notes:title "CannotConnectLocalhost"^^xsd:string .
 
-<NoteColorText> a notes:Note ;
-    dcterms:isPartOf <DividerAsciidoc> ;
+<https://www/jmoney.dev/notes/til#NoteColorText> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAsciidoc> ;
     notes:filename "markdown/asciidoc/color-text.md"^^xsd:string ;
     notes:title "ColorText"^^xsd:string .
 
-<NoteComparePrivateAndPublicSshKey> a notes:Note ;
-    dcterms:isPartOf <DividerSsh> ;
+<https://www/jmoney.dev/notes/til#NoteComparePrivateAndPublicSshKey> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerSsh> ;
     notes:filename "markdown/ssh/compare-private-and-public-ssh-key.md"^^xsd:string ;
     notes:title "ComparePrivateAndPublicSshKey"^^xsd:string .
 
-<NoteContainerRequestFilterPriorities> a notes:Note ;
-    dcterms:isPartOf <DividerJersey> ;
+<https://www/jmoney.dev/notes/til#NoteContainerRequestFilterPriorities> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerJersey> ;
     notes:filename "markdown/jersey/container-request-filter-priorities.md"^^xsd:string ;
     notes:title "ContainerRequestFilterPriorities"^^xsd:string .
 
-<NoteCvdUpdate> a notes:Note ;
-    dcterms:isPartOf <DividerClamav> ;
+<https://www/jmoney.dev/notes/til#NoteCvdUpdate> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerClamav> ;
     notes:filename "markdown/clamav/cvd_update.md"^^xsd:string ;
     notes:title "CvdUpdate"^^xsd:string .
 
-<NoteDeferServerDnsLookups> a notes:Note ;
-    dcterms:isPartOf <DividerHaproxy> ;
+<https://www/jmoney.dev/notes/til#NoteDeferServerDnsLookups> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerHaproxy> ;
     notes:filename "markdown/haproxy/defer-server-dns-lookups.md"^^xsd:string ;
     notes:title "DeferServerDnsLookups"^^xsd:string .
 
-<NoteDestructivelyClearOutReplicationSlot> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteDestructivelyClearOutReplicationSlot> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/destructively-clear-out-replication-slot.md"^^xsd:string ;
     notes:title "DestructivelyClearOutReplicationSlot"^^xsd:string .
 
-<NoteDevtoApi> a notes:Note ;
-    dcterms:isPartOf <DividerTechblog> ;
+<https://www/jmoney.dev/notes/til#NoteDevtoApi> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerTechblog> ;
     notes:filename "markdown/techblog/devto-api.md"^^xsd:string ;
     notes:title "DevtoApi"^^xsd:string .
 
-<NoteDiskSpaceQueries> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteDiskSpaceQueries> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/disk-space-queries.md"^^xsd:string ;
     notes:title "DiskSpaceQueries"^^xsd:string .
 
-<NoteDockerComposeDown> a notes:Note ;
-    dcterms:isPartOf <DividerDocker> ;
+<https://www/jmoney.dev/notes/til#NoteDockerComposeDown> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerDocker> ;
     notes:filename "markdown/docker/docker-compose-down.md"^^xsd:string ;
     notes:title "DockerComposeDown"^^xsd:string .
 
-<NoteDynamicReferencesCfn> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteDynamicReferencesCfn> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/dynamic-references-cfn.md"^^xsd:string ;
     notes:title "DynamicReferencesCfn"^^xsd:string .
 
-<NoteEc2InstancetypeLatestGeneration> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteEc2InstancetypeLatestGeneration> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/ec2-instancetype-latest-generation.md"^^xsd:string ;
     notes:title "Ec2InstancetypeLatestGeneration"^^xsd:string .
 
-<NoteFacts> a notes:Note ;
-    dcterms:isPartOf <DividerAnsible> ;
+<https://www/jmoney.dev/notes/til#NoteFacts> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAnsible> ;
     notes:filename "markdown/ansible/facts.md"^^xsd:string ;
     notes:title "Facts"^^xsd:string .
 
-<NoteFailover> a notes:Note ;
-    dcterms:isPartOf <DividerHaproxy> ;
+<https://www/jmoney.dev/notes/til#NoteFailover> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerHaproxy> ;
     notes:filename "markdown/haproxy/failover.md"^^xsd:string ;
     notes:title "Failover"^^xsd:string .
 
-<NoteGettingStartedWithBackstage> a notes:Note ;
-    dcterms:isPartOf <DividerBackstage> ;
+<https://www/jmoney.dev/notes/til#NoteGettingStartedWithBackstage> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerBackstage> ;
     notes:filename "markdown/backstage/getting-started-with-backstage.md"^^xsd:string ;
     notes:title "GettingStartedWithBackstage"^^xsd:string .
 
-<NoteGoreleaser> a notes:Note ;
-    dcterms:isPartOf <DividerGolang> ;
+<https://www/jmoney.dev/notes/til#NoteGoreleaser> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerGolang> ;
     notes:filename "markdown/golang/goreleaser.md"^^xsd:string ;
     notes:title "Goreleaser"^^xsd:string .
 
-<NoteHandlers> a notes:Note ;
-    dcterms:isPartOf <DividerAnsible> ;
+<https://www/jmoney.dev/notes/til#NoteHandlers> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAnsible> ;
     notes:filename "markdown/ansible/handlers.md"^^xsd:string ;
     notes:title "Handlers"^^xsd:string .
 
-<NoteHaproxyAndLua> a notes:Note ;
-    dcterms:isPartOf <DividerHaproxy> ;
+<https://www/jmoney.dev/notes/til#NoteHaproxyAndLua> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerHaproxy> ;
     notes:filename "markdown/haproxy/haproxy-and-lua.md"^^xsd:string ;
     notes:title "HaproxyAndLua"^^xsd:string .
 
-<NoteHibernateValidatorOptional> a notes:Note ;
-    dcterms:isPartOf <DividerJava> ;
+<https://www/jmoney.dev/notes/til#NoteHibernateValidatorOptional> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerJava> ;
     notes:filename "markdown/java/hibernate-validator-optional.md"^^xsd:string ;
     notes:title "HibernateValidatorOptional"^^xsd:string .
 
-<NoteIndex> a notes:Note ;
-    dcterms:isPartOf <DividerMarkdown> ;
+<https://www/jmoney.dev/notes/til#NoteIndex> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerMarkdown> ;
     notes:filename "markdown/index.md"^^xsd:string ;
     notes:title "Index"^^xsd:string .
 
-<NoteKinesisKclCheckpointTable> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteKinesisKclCheckpointTable> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/kinesis-kcl-checkpoint-table.md"^^xsd:string ;
     notes:title "KinesisKclCheckpointTable"^^xsd:string .
 
-<NoteKlipse> a notes:Note ;
-    dcterms:isPartOf <DividerTechblog> ;
+<https://www/jmoney.dev/notes/til#NoteKlipse> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerTechblog> ;
     notes:filename "markdown/techblog/klipse.md"^^xsd:string ;
     notes:title "Klipse"^^xsd:string .
 
-<NoteLambdaContainerImage> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteLambdaContainerImage> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/lambda-container-image.md"^^xsd:string ;
     notes:title "LambdaContainerImage"^^xsd:string .
 
-<NoteLambdaDockerContainer> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteLambdaDockerContainer> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/lambda-docker-container.md"^^xsd:string ;
     notes:title "LambdaDockerContainer"^^xsd:string .
 
-<NoteLargestRowBySize> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteLargestRowBySize> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/largest-row-by-size.md"^^xsd:string ;
     notes:title "LargestRowBySize"^^xsd:string .
 
-<NoteListAllInstancesInAutoscalingGroup> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteListAllInstancesInAutoscalingGroup> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/list-all-instances-in-autoscaling-group.md"^^xsd:string ;
     notes:title "ListAllInstancesInAutoscalingGroup"^^xsd:string .
 
-<NoteNullCharacterTextFields> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteNullCharacterTextFields> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/null-character-text-fields.md"^^xsd:string ;
     notes:title "NullCharacterTextFields"^^xsd:string .
 
-<NoteOpensearchBestPractices> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteOpensearchBestPractices> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/opensearch-best-practices.md"^^xsd:string ;
     notes:title "OpensearchBestPractices"^^xsd:string .
 
-<NotePgpassword> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NotePgpassword> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/PGPASSWORD.md"^^xsd:string ;
     notes:title "Pgpassword"^^xsd:string .
 
-<NotePostgresConnectionWithReplicationApi> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NotePostgresConnectionWithReplicationApi> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/postgres-connection-with-replication-api.md"^^xsd:string ;
     notes:title "PostgresConnectionWithReplicationApi"^^xsd:string .
 
-<NotePostgresTls> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NotePostgresTls> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/postgres-tls.md"^^xsd:string ;
     notes:title "PostgresTls"^^xsd:string .
 
-<NotePrivatelinkAlignment> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NotePrivatelinkAlignment> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/privatelink-alignment.md"^^xsd:string ;
     notes:title "PrivatelinkAlignment"^^xsd:string .
 
-<NoteRdsReplicationManagement> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteRdsReplicationManagement> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/rds-replication-management.md"^^xsd:string ;
     notes:title "RdsReplicationManagement"^^xsd:string .
 
-<NoteRdsUpdateConfigurations> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteRdsUpdateConfigurations> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/rds-update-configurations.md"^^xsd:string ;
     notes:title "RdsUpdateConfigurations"^^xsd:string .
 
-<NoteRegex> a notes:Note ;
-    dcterms:isPartOf <DividerJavascript> ;
+<https://www/jmoney.dev/notes/til#NoteRegex> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerJavascript> ;
     notes:filename "markdown/javascript/regex.md"^^xsd:string ;
     notes:title "Regex"^^xsd:string .
 
-<NoteReplicationLagLogicalSlots> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteReplicationLagLogicalSlots> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/replication-lag-logical-slots.md"^^xsd:string ;
     notes:title "ReplicationLagLogicalSlots"^^xsd:string .
 
-<NoteSamlAssertionUrl> a notes:Note ;
-    dcterms:isPartOf <DividerAuthentication> ;
+<https://www/jmoney.dev/notes/til#NoteSamlAssertionUrl> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAuthentication> ;
     notes:filename "markdown/authentication/saml-assertion-url.md"^^xsd:string ;
     notes:title "SamlAssertionUrl"^^xsd:string .
 
-<NoteSamlRelaystate> a notes:Note ;
-    dcterms:isPartOf <DividerAuthentication> ;
+<https://www/jmoney.dev/notes/til#NoteSamlRelaystate> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAuthentication> ;
     notes:filename "markdown/authentication/saml-relaystate.md"^^xsd:string ;
     notes:title "SamlRelaystate"^^xsd:string .
 
-<NoteSecretsManagerDecryt> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteSecretsManagerDecryt> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/secrets-manager-decryt.md"^^xsd:string ;
     notes:title "SecretsManagerDecryt"^^xsd:string .
 
-<NoteSendCommandSsm> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteSendCommandSsm> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/send-command-ssm.md"^^xsd:string ;
     notes:title "SendCommandSsm"^^xsd:string .
 
-<NoteServiceDiscovery> a notes:Note ;
-    dcterms:isPartOf <DividerHaproxy> ;
+<https://www/jmoney.dev/notes/til#NoteServiceDiscovery> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerHaproxy> ;
     notes:filename "markdown/haproxy/service-discovery.md"^^xsd:string ;
     notes:title "ServiceDiscovery"^^xsd:string .
 
-<NoteTransitGatewayCrossAcountSharing> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteTransitGatewayCrossAcountSharing> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/transit-gateway-cross-acount-sharing.md"^^xsd:string ;
     notes:title "TransitGatewayCrossAcountSharing"^^xsd:string .
 
-<NoteUnusedEbsVolumes> a notes:Note ;
-    dcterms:isPartOf <DividerAws> ;
+<https://www/jmoney.dev/notes/til#NoteUnusedEbsVolumes> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerAws> ;
     notes:filename "markdown/aws/unused-ebs-volumes.md"^^xsd:string ;
     notes:title "UnusedEbsVolumes"^^xsd:string .
 
-<NoteWal2JsonNextlsn> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteWal2JsonNextlsn> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/wal2json-nextlsn.md"^^xsd:string ;
     notes:title "Wal2JsonNextlsn"^^xsd:string .
 
-<NoteWalSendersTimeout> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteWalSendersTimeout> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/wal-senders-timeout.md"^^xsd:string ;
     notes:title "WalSendersTimeout"^^xsd:string .
 
-<NoteWhatPrivilegesAreAssignedToAUser> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteWhatPrivilegesAreAssignedToAUser> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/what-privileges-are-assigned-to-a-user.md"^^xsd:string ;
     notes:title "WhatPrivilegesAreAssignedToAUser"^^xsd:string .
 
-<NoteWhatUserOwnsTablesInASchema> a notes:Note ;
-    dcterms:isPartOf <DividerPostgres> ;
+<https://www/jmoney.dev/notes/til#NoteWhatUserOwnsTablesInASchema> a notes:Note ;
+    dcterms:isPartOf <https://www/jmoney.dev/notes/til#DividerPostgres> ;
     notes:filename "markdown/postgres/what-user-owns-tables-in-a-schema.md"^^xsd:string ;
     notes:title "WhatUserOwnsTablesInASchema"^^xsd:string .
 
-<DividerAsciidoc> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerAsciidoc> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Asciidoc"^^xsd:string .
 
-<DividerBackstage> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerBackstage> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Backstage"^^xsd:string .
 
-<DividerClamav> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerClamav> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Clamav"^^xsd:string .
 
-<DividerDocker> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerDocker> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Docker"^^xsd:string .
 
-<DividerGolang> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerGolang> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Golang"^^xsd:string .
 
-<DividerIntellij> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerIntellij> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Intellij"^^xsd:string .
 
-<DividerJava> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerJava> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Java"^^xsd:string .
 
-<DividerJavascript> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerJavascript> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Javascript"^^xsd:string .
 
-<DividerJersey> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerJersey> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Jersey"^^xsd:string .
 
-<DividerMarkdown> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerMarkdown> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Markdown"^^xsd:string .
 
-<DividerOpenssl> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerOpenssl> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Openssl"^^xsd:string .
 
-<DividerSsh> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerSsh> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Ssh"^^xsd:string .
 
-<DividerAnsible> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerAnsible> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Ansible"^^xsd:string .
 
-<DividerAuthentication> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerAuthentication> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Authentication"^^xsd:string .
 
-<DividerTechblog> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerTechblog> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Techblog"^^xsd:string .
 
-<DividerHaproxy> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerHaproxy> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Haproxy"^^xsd:string .
 
-<DividerAws> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerAws> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Aws"^^xsd:string .
 
-<DividerPostgres> a notes:Divider ;
-    dcterms:isPartOf <BinderTil> ;
+<https://www/jmoney.dev/notes/til#DividerPostgres> a notes:Divider ;
+    dcterms:isPartOf <tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> ;
     notes:name "Postgres"^^xsd:string .
 
-<BinderTil> a notes:Binder ;
-    notes:name "Til"^^xsd:string .
+<tilBinderHttps://Www/Jmoney.Dev/Notes/Til#> a notes:Binder ;
+    notes:name "Https://Www/Jmoney.Dev/Notes/Til#"^^xsd:string .
 
 
