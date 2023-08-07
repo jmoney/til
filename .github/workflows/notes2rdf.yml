@@ -28,7 +28,7 @@ jobs:
               id: generate-ttl
               uses: jmoney/notes2rdf@main
               with:
-                notes-root: ./markdown
+                notes-root: ./docs
                 base-uri: "https://www/jmoney.dev/notes/til"
                 output-file: ./notes.ttl
             - uses: actions/upload-artifact@v3

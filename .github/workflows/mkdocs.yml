@@ -7,6 +7,9 @@ on:
       - notes.ttl
       - README.md
   workflow_dispatch:
+  repository_dispatch:
+    types: [deploy]
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -28,9 +31,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Generate docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
+        uses: jmoney/gha-mkdocs-personal@main
         env:
-          CONFIG_FILE: mkdocs.yml
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
