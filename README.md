@@ -34,41 +34,41 @@
 
 ### Asciidoc
 
-* [ColorText](markdown/asciidoc/color-text.md)
+* [Color-Text](markdown/asciidoc/color-text.md)
 
 ### Authentication
 
-* [SamlAssertionUrl](markdown/authentication/saml-assertion-url.md)
-* [SamlRelaystate](markdown/authentication/saml-relaystate.md)
+* [Saml-Assertion-Url](markdown/authentication/saml-assertion-url.md)
+* [Saml-Relaystate](markdown/authentication/saml-relaystate.md)
 
 ### Aws
 
-* [DynamicReferencesCfn](markdown/aws/dynamic-references-cfn.md)
-* [Ec2InstancetypeLatestGeneration](markdown/aws/ec2-instancetype-latest-generation.md)
-* [KinesisKclCheckpointTable](markdown/aws/kinesis-kcl-checkpoint-table.md)
-* [LambdaContainerImage](markdown/aws/lambda-container-image.md)
-* [LambdaDockerContainer](markdown/aws/lambda-docker-container.md)
-* [ListAllInstancesInAutoscalingGroup](markdown/aws/list-all-instances-in-autoscaling-group.md)
-* [OpensearchBestPractices](markdown/aws/opensearch-best-practices.md)
-* [PrivatelinkAlignment](markdown/aws/privatelink-alignment.md)
-* [RdsReplicationManagement](markdown/aws/rds-replication-management.md)
-* [RdsUpdateConfigurations](markdown/aws/rds-update-configurations.md)
-* [SecretsManagerDecryt](markdown/aws/secrets-manager-decryt.md)
-* [SendCommandSsm](markdown/aws/send-command-ssm.md)
-* [TransitGatewayCrossAcountSharing](markdown/aws/transit-gateway-cross-acount-sharing.md)
-* [UnusedEbsVolumes](markdown/aws/unused-ebs-volumes.md)
+* [Dynamic-References-Cfn](markdown/aws/dynamic-references-cfn.md)
+* [Ec2-Instancetype-Latest-Generation](markdown/aws/ec2-instancetype-latest-generation.md)
+* [Kinesis-Kcl-Checkpoint-Table](markdown/aws/kinesis-kcl-checkpoint-table.md)
+* [Lambda-Container-Image](markdown/aws/lambda-container-image.md)
+* [Lambda-Docker-Container](markdown/aws/lambda-docker-container.md)
+* [List-All-Instances-In-Autoscaling-Group](markdown/aws/list-all-instances-in-autoscaling-group.md)
+* [Opensearch-Best-Practices](markdown/aws/opensearch-best-practices.md)
+* [Privatelink-Alignment](markdown/aws/privatelink-alignment.md)
+* [Rds-Replication-Management](markdown/aws/rds-replication-management.md)
+* [Rds-Update-Configurations](markdown/aws/rds-update-configurations.md)
+* [Secrets-Manager-Decryt](markdown/aws/secrets-manager-decryt.md)
+* [Send-Command-Ssm](markdown/aws/send-command-ssm.md)
+* [Transit-Gateway-Cross-Acount-Sharing](markdown/aws/transit-gateway-cross-acount-sharing.md)
+* [Unused-Ebs-Volumes](markdown/aws/unused-ebs-volumes.md)
 
 ### Backstage
 
-* [GettingStartedWithBackstage](markdown/backstage/getting-started-with-backstage.md)
+* [Getting-Started-With-Backstage](markdown/backstage/getting-started-with-backstage.md)
 
 ### Clamav
 
-* [CvdUpdate](markdown/clamav/cvd_update.md)
+* [Cvd_Update](markdown/clamav/cvd_update.md)
 
 ### Docker
 
-* [DockerComposeDown](markdown/docker/docker-compose-down.md)
+* [Docker-Compose-Down](markdown/docker/docker-compose-down.md)
 
 ### Golang
 
@@ -76,18 +76,18 @@
 
 ### Haproxy
 
-* [DeferServerDnsLookups](markdown/haproxy/defer-server-dns-lookups.md)
+* [Defer-Server-Dns-Lookups](markdown/haproxy/defer-server-dns-lookups.md)
 * [Failover](markdown/haproxy/failover.md)
-* [HaproxyAndLua](markdown/haproxy/haproxy-and-lua.md)
-* [ServiceDiscovery](markdown/haproxy/service-discovery.md)
+* [Haproxy-And-Lua](markdown/haproxy/haproxy-and-lua.md)
+* [Service-Discovery](markdown/haproxy/service-discovery.md)
 
 ### Intellij
 
-* [CannotConnectLocalhost](markdown/intellij/cannot-connect-localhost.md)
+* [Cannot-Connect-Localhost](markdown/intellij/cannot-connect-localhost.md)
 
 ### Java
 
-* [HibernateValidatorOptional](markdown/java/hibernate-validator-optional.md)
+* [Hibernate-Validator-Optional](markdown/java/hibernate-validator-optional.md)
 
 ### Javascript
 
@@ -95,7 +95,7 @@
 
 ### Jersey
 
-* [ContainerRequestFilterPriorities](markdown/jersey/container-request-filter-priorities.md)
+* [Container-Request-Filter-Priorities](markdown/jersey/container-request-filter-priorities.md)
 
 ### Markdown
 
@@ -107,27 +107,27 @@
 
 ### Postgres
 
-* [ActiveWalReadersOnSlot](markdown/postgres/active-wal-readers-on-slot.md)
-* [AdvanceWalreader](markdown/postgres/advance-walreader.md)
-* [DestructivelyClearOutReplicationSlot](markdown/postgres/destructively-clear-out-replication-slot.md)
-* [DiskSpaceQueries](markdown/postgres/disk-space-queries.md)
-* [LargestRowBySize](markdown/postgres/largest-row-by-size.md)
-* [NullCharacterTextFields](markdown/postgres/null-character-text-fields.md)
+* [Active-Wal-Readers-On-Slot](markdown/postgres/active-wal-readers-on-slot.md)
+* [Advance-Walreader](markdown/postgres/advance-walreader.md)
+* [Destructively-Clear-Out-Replication-Slot](markdown/postgres/destructively-clear-out-replication-slot.md)
+* [Disk-Space-Queries](markdown/postgres/disk-space-queries.md)
+* [Largest-Row-By-Size](markdown/postgres/largest-row-by-size.md)
+* [Null-Character-Text-Fields](markdown/postgres/null-character-text-fields.md)
 * [Pgpassword](markdown/postgres/PGPASSWORD.md)
-* [PostgresConnectionWithReplicationApi](markdown/postgres/postgres-connection-with-replication-api.md)
-* [PostgresTls](markdown/postgres/postgres-tls.md)
-* [ReplicationLagLogicalSlots](markdown/postgres/replication-lag-logical-slots.md)
-* [Wal2JsonNextlsn](markdown/postgres/wal2json-nextlsn.md)
-* [WalSendersTimeout](markdown/postgres/wal-senders-timeout.md)
-* [WhatPrivilegesAreAssignedToAUser](markdown/postgres/what-privileges-are-assigned-to-a-user.md)
-* [WhatUserOwnsTablesInASchema](markdown/postgres/what-user-owns-tables-in-a-schema.md)
+* [Postgres-Connection-With-Replication-Api](markdown/postgres/postgres-connection-with-replication-api.md)
+* [Postgres-Tls](markdown/postgres/postgres-tls.md)
+* [Replication-Lag-Logical-Slots](markdown/postgres/replication-lag-logical-slots.md)
+* [Wal2Json-Nextlsn](markdown/postgres/wal2json-nextlsn.md)
+* [Wal-Senders-Timeout](markdown/postgres/wal-senders-timeout.md)
+* [What-Privileges-Are-Assigned-To-A-User](markdown/postgres/what-privileges-are-assigned-to-a-user.md)
+* [What-User-Owns-Tables-In-A-Schema](markdown/postgres/what-user-owns-tables-in-a-schema.md)
 
 ### Ssh
 
-* [ComparePrivateAndPublicSshKey](markdown/ssh/compare-private-and-public-ssh-key.md)
+* [Compare-Private-And-Public-Ssh-Key](markdown/ssh/compare-private-and-public-ssh-key.md)
 
 ### Techblog
 
-* [DevtoApi](markdown/techblog/devto-api.md)
+* [Devto-Api](markdown/techblog/devto-api.md)
 * [Klipse](markdown/techblog/klipse.md)
 
